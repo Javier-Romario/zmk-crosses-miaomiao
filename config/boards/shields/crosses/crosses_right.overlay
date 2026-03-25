@@ -4,6 +4,11 @@
     col-offset = <6>;
 }; 
 
+&trackball {
+    scroll-layers = <1>;
+    automouse-layer = <2>;
+};
+
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
