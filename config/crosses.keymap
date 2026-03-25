@@ -41,27 +41,27 @@
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
             // │    Q     │    W     │    E     │    R     │    T     │   │    Y     │    U     │    I     │    O     │    P     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │    A     │  Alt/S   │  Ctrl/D  │  Shft/F  │    G     │   │    H     │  Shft/J  │  Ctrl/K  │  Alt/L   │    '     │
+            // │  Cmd/A   │  Opt/S   │  Ctrl/D  │  Shft/F  │    G     │   │    H     │  Shft/J  │  Cmd/K   │  Opt/L   │    '     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │    Z     │    X     │    C     │    V     │    B     │   │    N     │    M     │    ,     │    .     │    /     │
-            // └──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┘
+            // └──────────┴──────────┴──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┴──────────┘
             //                                  │Mouse/Esc │ Nav/Bspc │ Num/Tab  │   │ Sym/Ent  │ Fun/Spc  │Media/Ins │
             //                                  └──────────┴──────────┴──────────┘   └──────────┴──────────┴──────────┘
             bindings = <
-&kp Q       &kp W        &kp E        &kp R        &kp T            &kp Y        &kp U        &kp I        &kp O        &kp P
-&kp A       &mt LALT S   &mt LCTRL D  &mt LSHFT F  &kp G            &kp H        &mt RSHFT J  &mt RCTRL K  &mt LALT L   &kp SQT
-&kp Z       &kp X        &kp C        &kp V        &kp B            &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH
-            &lt MOUSE ESC  &lt NAV BSPC  &lt NUM TAB              &lt SYM RET  &lt FUN SPACE  &lt MEDIA INS
+&kp Q        &kp W        &kp E        &kp R        &kp T            &kp Y        &kp U        &kp I        &kp O        &kp P
+&mt LGUI A   &mt LALT S   &mt LCTRL D  &mt LSHFT F  &kp G            &kp H        &mt RSHFT J  &mt RGUI K   &mt RALT L   &kp SQT
+&kp Z        &kp X        &kp C        &kp V        &kp B            &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH
+             &lt MOUSE ESC  &lt NAV BSPC  &lt NUM TAB              &lt SYM RET  &lt FUN SPACE  &lt MEDIA INS
             >;
         };
 
         nav_layer {
             display-name = "Navigation";
             bindings = <
-&trans      &trans      &trans      &trans      &trans            &kp K_REDO   &kp K_PASTE  &kp K_COPY   &kp K_CUT    &kp K_UNDO
-&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans            &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &caps_word
-&trans      &trans      &trans      &trans      &trans            &kp HOME     &kp PG_DN    &kp PG_UP    &kp END      &kp INS
-                                 &trans      &trans      &trans            &kp RET      &kp BSPC     &kp DEL
+&trans      &trans      &trans      &trans      &trans            &kp LG(LS(Z))  &kp LG(V)   &kp LG(C)    &kp LG(X)    &kp LG(Z)
+&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans            &kp LEFT       &kp DOWN     &kp UP       &kp RIGHT    &caps_word
+&trans      &trans      &trans      &trans      &trans            &kp HOME       &kp PG_DN    &kp PG_UP    &kp END      &kp INS
+                                 &trans      &trans      &trans            &kp RET        &kp BSPC     &kp DEL
             >;
         };
 
@@ -79,7 +79,7 @@
             display-name = "Media";
             bindings = <
 &trans          &kp C_BRI_DN  &kp C_BRI_UP  &trans          &trans              &bootloader  &trans        &trans        &trans        &trans
-&kp C_PREV     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT     &trans              &trans        &kp LSHFT    &kp LCTRL    &kp LALT     &kp LGUI
+&kp C_PREV     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT     &trans              &trans        &kp RSHFT    &kp RGUI     &kp RALT     &kp RCTRL
 &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_SAD &rgb_ug RGB_TOG  &trans        &trans        &trans        &trans        &trans
                                  &kp C_MUTE    &kp C_PP      &kp C_STOP           &trans        &trans        &trans
             >;
@@ -99,7 +99,7 @@
             display-name = "Symbols";
             bindings = <
 &kp LBRC   &kp AMPS   &kp ASTRK  &kp LPAR   &kp RBRC         &trans        &trans        &trans        &trans        &trans
-&kp COLON  &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS         &trans        &kp RSHFT    &kp RCTRL    &kp LALT     &kp RGUI
+&kp COLON  &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS         &trans        &kp RSHFT    &kp RGUI     &kp RALT     &kp RCTRL
 &kp TILDE  &kp EXCL   &kp AT     &kp HASH   &kp PIPE         &trans        &trans        &trans        &trans        &trans
                                   &kp LPAR   &kp RPAR   &kp UNDER        &trans        &trans        &trans
             >;
@@ -109,7 +109,7 @@
             display-name = "Function";
             bindings = <
 &kp F12    &kp F7     &kp F8     &kp F9     &kp PSCRN        &trans        &trans        &trans        &trans        &trans
-&kp F11    &kp F4     &kp F5     &kp F6     &kp SLCK         &trans        &kp RSHFT    &kp RCTRL    &kp LALT     &kp RGUI
+&kp F11    &kp F4     &kp F5     &kp F6     &kp SLCK         &trans        &kp RSHFT    &kp RGUI     &kp RALT     &kp RCTRL
 &kp F10    &kp F1     &kp F2     &kp F3     &kp PAUSE_BREAK  &trans        &trans        &trans        &trans        &trans
                                   &kp K_APP  &kp SPACE  &kp LGUI         &trans        &trans        &trans
             >;
