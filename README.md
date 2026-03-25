@@ -1,6 +1,6 @@
 # Crosses
 
-A wireless 42-key split ergonomic keyboard with PMW3610 trackball and OLED displays.
+A wireless 36-key split ergonomic keyboard with PMW3610 trackball.
 
 This build uses diode-direction as "row2col" and differs from the original GGGW Crosses keyboard, also in GPIOs, also known as MiaoMiao’s PCB variant.
 
@@ -12,11 +12,10 @@ This build uses diode-direction as "row2col" and differs from the original GGGW 
 
 ## Features
 
-- **42 keys** (3x6 + 3 thumb keys per side)
-- **PMW3610 trackball** on the right side
-- **SSD1306 OLED displays** on both sides (128x32)
+- **36 keys** (3x5 + 3 thumb keys per side)
+- **PMW3610 trackball** on the left side
 - **ZMK Studio** support for real-time keymap editing
-- **Miryoku-inspired** layout with home row mods
+- **Miryoku-inspired** layout with macOS home row mods (Cmd/Opt)
 
 ## Hardware
 
@@ -25,7 +24,6 @@ This build uses diode-direction as "row2col" and differs from the original GGGW 
 | MCU | nice!nano v2 |
 | Switches | Kailh Choc |
 | Trackball | PMW3610 sensor |
-| Display | SSD1306 0.91" OLED (128x32) |
 
 ## Building Firmware
 
@@ -106,7 +104,7 @@ If you have Bluetooth pairing issues:
 
 ## Trackball
 
-The mouse layer will be active after using the trackball for 400ms.
+The trackball is on the left side. The mouse layer will be active after using the trackball for 400ms.
 
 - **Normal mode**: Move cursor (BASE layer)
 - **Scroll mode**: Hold NAV layer (layer 1) and move trackball
