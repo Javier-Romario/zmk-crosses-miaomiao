@@ -31,12 +31,12 @@ layers:
   - ','
   - .
   - {t: /, h: '$$mdi:apple-keyboard-shift$$'}
-  - '$$mdi:apple-keyboard-control$$'
-  - '$$mdi:apple-keyboard-option$$'
-  - '$$mdi:apple-keyboard-command$$'
-  - '$$mdi:keyboard-space$$'
-  - '$$mdi:keyboard-return$$'
-  - '$$mdi:backspace$$'
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - LGUI
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-return$$
+  - $$mdi:backspace$$
   Navigation:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -69,8 +69,8 @@ layers:
   - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - $$mdi:keyboard-return$$
   - $$mdi:backspace$$
   - DEL
@@ -107,8 +107,8 @@ layers:
   - \
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '-'
+  - {type: held}
+  - {t: '-', type: held}
   - '0'
   - .
   Symbols:
@@ -145,8 +145,8 @@ layers:
   - (
   - )
   - _
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Function:
   - F12
@@ -181,10 +181,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - APP
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-command$$
+  - LGUI
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   Mouse+Media:
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -216,9 +216,22 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&bootloader'
-  - MUTE
+  - {t: MUTE, type: held}
   - PP
-  - STOP
+  - {t: STOP, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [30, 31]
+  k: Sft+Ctl+Alt+LGUI
+- p: [31, 32]
+  k: Navigation
+- p: [30, 32]
+  k: Mouse+Media
+- p: [32, 33]
+  k: Numbers
+- p: [33, 34]
+  k: Symbols
+- p: [34, 35]
+  k: Function
