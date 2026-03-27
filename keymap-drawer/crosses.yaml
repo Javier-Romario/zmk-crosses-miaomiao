@@ -231,7 +231,7 @@ combos:
   k: {t: Numbers, h: toggle}
 - p: [33, 34]
   k: {t: Symbols, h: toggle}
-- p: [34, 35]
-  k: {t: Function, h: toggle}
 - p: [33, 35]
+  k: {t: Function, h: toggle}
+- p: [34, 35]
   k: {t: Mouse+Media, h: toggle}

@@ -446,19 +446,19 @@ rect.held, rect.combo.held {
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-<a href="#Function">
-<text x="448" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
-</a><text x="448" y="207" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
-<text x="420" y="196" class="combo tap">
-<tspan x="420" dy="-0.6em">Mouse+</tspan><tspan x="420" dy="1.2em">Media</tspan>
+<a href="#Function">
+<text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
+</a><text x="420" y="207" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
+<text x="448" y="196" class="combo tap">
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-<text x="420" y="207" class="combo hold">toggle</text>
+<text x="448" y="207" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -676,19 +676,19 @@ rect.held, rect.combo.held {
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-<a href="#Function">
-<text x="448" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
-</a><text x="448" y="207" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
-<text x="420" y="196" class="combo tap">
-<tspan x="420" dy="-0.6em">Mouse+</tspan><tspan x="420" dy="1.2em">Media</tspan>
+<a href="#Function">
+<text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
+</a><text x="420" y="207" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
+<text x="448" y="196" class="combo tap">
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-<text x="420" y="207" class="combo hold">toggle</text>
+<text x="448" y="207" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -904,19 +904,19 @@ rect.held, rect.combo.held {
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-<a href="#Function">
-<text x="448" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
-</a><text x="448" y="207" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
-<text x="420" y="196" class="combo tap">
-<tspan x="420" dy="-0.6em">Mouse+</tspan><tspan x="420" dy="1.2em">Media</tspan>
+<a href="#Function">
+<text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
+</a><text x="420" y="207" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
+<text x="448" y="196" class="combo tap">
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-<text x="420" y="207" class="combo hold">toggle</text>
+<text x="448" y="207" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1132,19 +1132,19 @@ rect.held, rect.combo.held {
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-<a href="#Function">
-<text x="448" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
-</a><text x="448" y="207" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
-<text x="420" y="196" class="combo tap">
-<tspan x="420" dy="-0.6em">Mouse+</tspan><tspan x="420" dy="1.2em">Media</tspan>
+<a href="#Function">
+<text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
+</a><text x="420" y="207" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
+<text x="448" y="196" class="combo tap">
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-<text x="420" y="207" class="combo hold">toggle</text>
+<text x="448" y="207" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1362,19 +1362,19 @@ rect.held, rect.combo.held {
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-<a href="#Function">
-<text x="448" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
-</a><text x="448" y="207" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
-<text x="420" y="196" class="combo tap">
-<tspan x="420" dy="-0.6em">Mouse+</tspan><tspan x="420" dy="1.2em">Media</tspan>
+<a href="#Function">
+<text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
+</a><text x="420" y="207" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
+<text x="448" y="196" class="combo tap">
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-<text x="420" y="207" class="combo hold">toggle</text>
+<text x="448" y="207" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1618,19 +1618,19 @@ rect.held, rect.combo.held {
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
-<a href="#Function">
-<text x="448" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
-</a><text x="448" y="207" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
-<text x="420" y="196" class="combo tap">
-<tspan x="420" dy="-0.6em">Mouse+</tspan><tspan x="420" dy="1.2em">Media</tspan>
+<a href="#Function">
+<text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
+</a><text x="420" y="207" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
+<text x="448" y="196" class="combo tap">
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-<text x="420" y="207" class="combo hold">toggle</text>
+<text x="448" y="207" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
