@@ -44,31 +44,33 @@
         combo_nav {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&mo NAV>;
-        };
-        combo_mouse {
-            timeout-ms = <50>;
-            key-positions = <34 35>;
-            bindings = <&mo MOUSE>;
+            bindings = <&tog NAV>;
         };
 
         // Cross-hand (inner thumbs)
         combo_num {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&mo NUM>;
+            bindings = <&tog NUM>;
         };
 
         // Right thumb pairs
         combo_sym {
             timeout-ms = <50>;
             key-positions = <33 34>;
-            bindings = <&mo SYM>;
+            bindings = <&tog SYM>;
         };
         combo_fun {
             timeout-ms = <50>;
+            key-positions = <34 35>;
+            bindings = <&tog FUN>;
+        };
+
+        // Non-adjacent — MOUSE/Media (rare use)
+        combo_mouse {
+            timeout-ms = <50>;
             key-positions = <30 32>;
-            bindings = <&mo FUN>;
+            bindings = <&tog MOUSE>;
         };
     };
 
