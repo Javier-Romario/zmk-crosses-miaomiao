@@ -62,14 +62,14 @@
         };
         combo_fun {
             timeout-ms = <50>;
-            key-positions = <34 35>;
+            key-positions = <33 35>;
             bindings = <&tog FUN>;
         };
 
-        // Right thumb non-adjacent — MOUSE/Media (rare use)
+        // Right thumb adjacent — MOUSE/Media
         combo_mouse {
             timeout-ms = <50>;
-            key-positions = <33 35>;
+            key-positions = <34 35>;
             bindings = <&tog MOUSE>;
         };
     };
