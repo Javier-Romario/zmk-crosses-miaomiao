@@ -179,12 +179,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - APP
+  - {t: APP, type: held}
   - $$mdi:keyboard-space$$
-  - LGUI
+  - {t: LGUI, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   Mouse+Media:
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -216,22 +216,22 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&bootloader'
-  - {t: MUTE, type: held}
+  - MUTE
   - PP
-  - {t: STOP, type: held}
+  - STOP
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
 combos:
 - p: [30, 31]
   k: Sft+Ctl+Alt+LGUI
 - p: [31, 32]
   k: Navigation
-- p: [30, 32]
+- p: [34, 35]
   k: Mouse+Media
 - p: [32, 33]
   k: Numbers
 - p: [33, 34]
   k: Symbols
-- p: [34, 35]
+- p: [30, 32]
   k: Function
