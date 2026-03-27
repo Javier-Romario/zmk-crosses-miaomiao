@@ -1,9 +1,6 @@
 #include "crosses.dtsi"
 
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-    };
+&trackball_split {
+    device = <&trackball>;
 };
 

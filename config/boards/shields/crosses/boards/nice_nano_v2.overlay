@@ -63,6 +63,9 @@
       scroll-layers = <1>;
       automouse-layer = <2>;
 #endif
+#ifdef CONFIG_SHIELD_CROSSES_LEFT
+      scroll-layers = <0>;
+#endif
       //snipe-layers = <4>;
   };
 

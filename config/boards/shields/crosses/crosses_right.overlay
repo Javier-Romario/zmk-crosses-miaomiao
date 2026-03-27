@@ -9,5 +9,10 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
     };
+
+    left_trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball_split>;
+    };
 };
 
