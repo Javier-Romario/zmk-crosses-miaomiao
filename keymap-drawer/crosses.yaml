@@ -34,11 +34,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - LGUI
-  - $$mdi:keyboard-space$$
   - $$mdi:keyboard-return$$
+  - $$mdi:keyboard-space$$
   - $$mdi:backspace$$
   Navigation:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -69,13 +69,13 @@ layers:
   - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-return$$
   - $$mdi:backspace$$
   - DEL
   Numbers:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -107,12 +107,12 @@ layers:
   - \
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '-', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '-'
   - '0'
   - .
   Symbols:
-  - '{'
+  - {t: Base, h: toggle}
   - '&'
   - '*'
   - (
@@ -145,11 +145,11 @@ layers:
   - (
   - )
   - _
-  - {type: held}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Function:
-  - F12
+  - {t: Base, h: toggle}
   - F7
   - F8
   - F9
@@ -179,14 +179,14 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: APP, type: held}
+  - APP
   - $$mdi:keyboard-space$$
-  - {t: LGUI, type: held}
+  - LGUI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Mouse+Media:
-  - $$mdi:bluetooth-off$$
+  - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - BRI DN
   - BRI UP
@@ -220,18 +220,18 @@ layers:
   - PP
   - STOP
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [30, 31]
   k: Sft+Ctl+Alt+LGUI
 - p: [31, 32]
-  k: Navigation
-- p: [34, 35]
-  k: Mouse+Media
+  k: {t: Navigation, h: toggle}
 - p: [32, 33]
-  k: Numbers
+  k: {t: Numbers, h: toggle}
 - p: [33, 34]
-  k: Symbols
+  k: {t: Symbols, h: toggle}
+- p: [34, 35]
+  k: {t: Function, h: toggle}
 - p: [30, 32]
-  k: Function
+  k: {t: Mouse+Media, h: toggle}
