@@ -48,7 +48,7 @@
         };
         combo_mouse {
             timeout-ms = <50>;
-            key-positions = <30 32>;
+            key-positions = <34 35>;
             bindings = <&mo MOUSE>;
         };
 
@@ -67,7 +67,7 @@
         };
         combo_fun {
             timeout-ms = <50>;
-            key-positions = <34 35>;
+            key-positions = <30 32>;
             bindings = <&mo FUN>;
         };
     };
