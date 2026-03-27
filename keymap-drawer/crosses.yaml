@@ -117,7 +117,7 @@ layers:
   - '*'
   - (
   - '}'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '{'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -154,7 +154,7 @@ layers:
   - F8
   - F9
   - PSCRN
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -200,7 +200,7 @@ layers:
   - VOL DN
   - VOL UP
   - NEXT
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:bluetooth-off$$
   - {t: '$$mdi:mouse-left-click$$', h: left}
   - {t: '$$mdi:mouse$$', h: middle}
   - {t: '$$mdi:mouse-right-click$$', h: right}
@@ -233,5 +233,5 @@ combos:
   k: {t: Symbols, h: toggle}
 - p: [34, 35]
   k: {t: Function, h: toggle}
-- p: [30, 32]
+- p: [33, 35]
   k: {t: Mouse+Media, h: toggle}
