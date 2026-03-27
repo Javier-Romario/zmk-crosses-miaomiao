@@ -27,6 +27,9 @@
 <svg id="mdi:keyboard-space">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-space" viewBox="0 0 24 24"><path d="M3 15H5V19H19V15H21V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15Z" /></svg>
 </svg>
+<svg id="mdi:keyboard-tab">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
+</svg>
 <svg id="mdi:mouse">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-mouse" viewBox="0 0 24 24"><path d="M11,1.07C7.05,1.56 4,4.92 4,9H11M4,15A8,8 0 0,0 12,23A8,8 0 0,0 20,15V11H4M13,1.07V9H20C20,4.92 16.94,1.56 13,1.07Z" /></svg>
 </svg>
@@ -420,18 +423,22 @@ rect.held, rect.combo.held {
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-11" y="-15" height="22" width="22.0" class="key tap glyph mdi:backspace"/>
 </g>
 <g class="combo combopos-0">
+<rect rx="6" ry="6" x="42" y="15" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="45" y="17" height="22" width="22.0" class="combo tap glyph mdi:keyboard-tab"/>
+</g>
+<g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
 <text x="168" y="196" class="combo tap">
 <tspan x="168" dy="-0.6em" style="font-size: 78%">Sft+Ctl</tspan><tspan x="168" dy="1.2em" style="font-size: 78%">+Alt+LGUI</tspan>
 </text>
 </g>
-<g class="combo combopos-1">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="183" width="28" height="26" class="combo"/>
 <a href="#Navigation">
 <text x="224" y="196" class="combo tap layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
 </a><text x="224" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-3">
 <path d="M308,196 l-37,0" class="combo"/>
 <path d="M308,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="294" y="183" width="28" height="26" class="combo"/>
@@ -439,13 +446,13 @@ rect.held, rect.combo.held {
 <text x="308" y="196" class="combo tap layer-activator">Numbers</text>
 </a><text x="308" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="378" y="183" width="28" height="26" class="combo"/>
 <a href="#Symbols">
 <text x="392" y="196" class="combo tap layer-activator">Symbols</text>
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
@@ -453,7 +460,7 @@ rect.held, rect.combo.held {
 <text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
 </a><text x="420" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
 <tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
@@ -650,18 +657,22 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap">DEL</text>
 </g>
 <g class="combo combopos-0">
+<rect rx="6" ry="6" x="42" y="15" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="45" y="17" height="22" width="22.0" class="combo tap glyph mdi:keyboard-tab"/>
+</g>
+<g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
 <text x="168" y="196" class="combo tap">
 <tspan x="168" dy="-0.6em" style="font-size: 78%">Sft+Ctl</tspan><tspan x="168" dy="1.2em" style="font-size: 78%">+Alt+LGUI</tspan>
 </text>
 </g>
-<g class="combo combopos-1">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="183" width="28" height="26" class="combo"/>
 <a href="#Navigation">
 <text x="224" y="196" class="combo tap layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
 </a><text x="224" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-3">
 <path d="M308,196 l-37,0" class="combo"/>
 <path d="M308,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="294" y="183" width="28" height="26" class="combo"/>
@@ -669,13 +680,13 @@ rect.held, rect.combo.held {
 <text x="308" y="196" class="combo tap layer-activator">Numbers</text>
 </a><text x="308" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="378" y="183" width="28" height="26" class="combo"/>
 <a href="#Symbols">
 <text x="392" y="196" class="combo tap layer-activator">Symbols</text>
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
@@ -683,7 +694,7 @@ rect.held, rect.combo.held {
 <text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
 </a><text x="420" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
 <tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
@@ -878,18 +889,22 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap">.</text>
 </g>
 <g class="combo combopos-0">
+<rect rx="6" ry="6" x="42" y="15" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="45" y="17" height="22" width="22.0" class="combo tap glyph mdi:keyboard-tab"/>
+</g>
+<g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
 <text x="168" y="196" class="combo tap">
 <tspan x="168" dy="-0.6em" style="font-size: 78%">Sft+Ctl</tspan><tspan x="168" dy="1.2em" style="font-size: 78%">+Alt+LGUI</tspan>
 </text>
 </g>
-<g class="combo combopos-1">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="183" width="28" height="26" class="combo"/>
 <a href="#Navigation">
 <text x="224" y="196" class="combo tap layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
 </a><text x="224" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-3">
 <path d="M308,196 l-37,0" class="combo"/>
 <path d="M308,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="294" y="183" width="28" height="26" class="combo"/>
@@ -897,13 +912,13 @@ rect.held, rect.combo.held {
 <text x="308" y="196" class="combo tap layer-activator">Numbers</text>
 </a><text x="308" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="378" y="183" width="28" height="26" class="combo"/>
 <a href="#Symbols">
 <text x="392" y="196" class="combo tap layer-activator">Symbols</text>
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
@@ -911,7 +926,7 @@ rect.held, rect.combo.held {
 <text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
 </a><text x="420" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
 <tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
@@ -1106,18 +1121,22 @@ rect.held, rect.combo.held {
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-11" y="-15" height="22" width="22.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g class="combo combopos-0">
+<rect rx="6" ry="6" x="42" y="15" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="45" y="17" height="22" width="22.0" class="combo tap glyph mdi:keyboard-tab"/>
+</g>
+<g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
 <text x="168" y="196" class="combo tap">
 <tspan x="168" dy="-0.6em" style="font-size: 78%">Sft+Ctl</tspan><tspan x="168" dy="1.2em" style="font-size: 78%">+Alt+LGUI</tspan>
 </text>
 </g>
-<g class="combo combopos-1">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="183" width="28" height="26" class="combo"/>
 <a href="#Navigation">
 <text x="224" y="196" class="combo tap layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
 </a><text x="224" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-3">
 <path d="M308,196 l-37,0" class="combo"/>
 <path d="M308,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="294" y="183" width="28" height="26" class="combo"/>
@@ -1125,13 +1144,13 @@ rect.held, rect.combo.held {
 <text x="308" y="196" class="combo tap layer-activator">Numbers</text>
 </a><text x="308" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="378" y="183" width="28" height="26" class="combo"/>
 <a href="#Symbols">
 <text x="392" y="196" class="combo tap layer-activator">Symbols</text>
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
@@ -1139,7 +1158,7 @@ rect.held, rect.combo.held {
 <text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
 </a><text x="420" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
 <tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
@@ -1336,18 +1355,22 @@ rect.held, rect.combo.held {
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-11" y="-15" height="22" width="22.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g class="combo combopos-0">
+<rect rx="6" ry="6" x="42" y="15" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="45" y="17" height="22" width="22.0" class="combo tap glyph mdi:keyboard-tab"/>
+</g>
+<g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
 <text x="168" y="196" class="combo tap">
 <tspan x="168" dy="-0.6em" style="font-size: 78%">Sft+Ctl</tspan><tspan x="168" dy="1.2em" style="font-size: 78%">+Alt+LGUI</tspan>
 </text>
 </g>
-<g class="combo combopos-1">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="183" width="28" height="26" class="combo"/>
 <a href="#Navigation">
 <text x="224" y="196" class="combo tap layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
 </a><text x="224" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-3">
 <path d="M308,196 l-37,0" class="combo"/>
 <path d="M308,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="294" y="183" width="28" height="26" class="combo"/>
@@ -1355,13 +1378,13 @@ rect.held, rect.combo.held {
 <text x="308" y="196" class="combo tap layer-activator">Numbers</text>
 </a><text x="308" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="378" y="183" width="28" height="26" class="combo"/>
 <a href="#Symbols">
 <text x="392" y="196" class="combo tap layer-activator">Symbols</text>
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
@@ -1369,7 +1392,7 @@ rect.held, rect.combo.held {
 <text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
 </a><text x="420" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
 <tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
@@ -1592,18 +1615,22 @@ rect.held, rect.combo.held {
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-11" y="-15" height="22" width="22.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g class="combo combopos-0">
+<rect rx="6" ry="6" x="42" y="15" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="45" y="17" height="22" width="22.0" class="combo tap glyph mdi:keyboard-tab"/>
+</g>
+<g class="combo combopos-1">
 <rect rx="6" ry="6" x="154" y="183" width="28" height="26" class="combo"/>
 <text x="168" y="196" class="combo tap">
 <tspan x="168" dy="-0.6em" style="font-size: 78%">Sft+Ctl</tspan><tspan x="168" dy="1.2em" style="font-size: 78%">+Alt+LGUI</tspan>
 </text>
 </g>
-<g class="combo combopos-1">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="210" y="183" width="28" height="26" class="combo"/>
 <a href="#Navigation">
 <text x="224" y="196" class="combo tap layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
 </a><text x="224" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-2">
+<g class="combo combopos-3">
 <path d="M308,196 l-37,0" class="combo"/>
 <path d="M308,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="294" y="183" width="28" height="26" class="combo"/>
@@ -1611,13 +1638,13 @@ rect.held, rect.combo.held {
 <text x="308" y="196" class="combo tap layer-activator">Numbers</text>
 </a><text x="308" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="378" y="183" width="28" height="26" class="combo"/>
 <a href="#Symbols">
 <text x="392" y="196" class="combo tap layer-activator">Symbols</text>
 </a><text x="392" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-5">
 <path d="M420,196 l-37,0" class="combo"/>
 <path d="M420,196 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="406" y="183" width="28" height="26" class="combo"/>
@@ -1625,7 +1652,7 @@ rect.held, rect.combo.held {
 <text x="420" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
 </a><text x="420" y="207" class="combo hold">toggle</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
 <tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
