@@ -143,19 +143,24 @@
         sym_layer {
             display-name = "Symbols";
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-            // │  → Base  │    &     │    *     │    (     │    }     │   │    {     │          │          │          │          │
+            // │  → Base  │    !     │    @     │    #     │    $     │   │    [     │    ]     │    -     │    =     │    \     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │    :     │    $     │    %     │    ^     │    +     │   │          │          │          │          │          │
+            // │    %     │    ^     │    &     │    *     │    (     │   │    ;     │    '     │    ,     │    .     │    /     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │    ~     │    !     │    @     │    #     │    |     │   │          │          │          │          │          │
+            // │  LShft   │    )     │    `     │          │          │   │  RShft   │          │          │          │          │
             // └──────────┴──────────┴──────────┼──────────┼──────────┼───┤   ├──────────┼──────────┼──────────┴──────────┴──────────┘
-            //                                  │    (     │    )     │ _ │   │  (held)  │  (held)  │          │
+            //                                  │          │          │   │   │          │          │          │
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
+            //
+            // Right side: unshifted key, Shift gives paired symbol:
+            //   [ → {    ] → }    - → _    = → +    \ → |
+            //   ; → :    ' → "    , → <    . → >    / → ?
+            //   ` → ~  (left side)
             bindings = <
-&to BASE   &kp AMPS   &kp ASTRK  &kp LPAR   &kp RBRC         &kp LBRC      &trans        &trans        &trans        &trans
-&kp COLON  &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS         &trans        &trans        &trans        &trans        &trans
-&kp TILDE  &kp EXCL   &kp AT     &kp HASH   &kp PIPE         &trans        &trans        &trans        &trans        &trans
-           &kp LPAR   &kp RPAR   &kp UNDER                   &trans        &trans        &trans
+&to BASE   &kp EXCL   &kp AT     &kp HASH   &kp DLLR     &kp LBKT   &kp RBKT   &kp MINUS  &kp EQUAL  &kp BSLH
+&kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR     &kp SEMI   &kp SQT    &kp COMMA  &kp DOT    &kp FSLH
+&kp LSHFT  &kp RPAR   &kp GRAVE  &trans     &trans       &kp RSHFT  &trans     &trans     &trans     &trans
+           &trans     &trans     &trans                  &trans     &trans     &trans
             >;
         };
 
