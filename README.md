@@ -1,21 +1,27 @@
-# Crosses
+# Crosses (MiaoMiao variant)
 
-A wireless 36-key split ergonomic keyboard with PMW3610 trackball.
+A wireless 36-key split ergonomic keyboard with dual PMW3610 trackballs, built on nice!nano v2 with ZMK firmware.
 
-This build uses diode-direction as "row2col" and differs from the original GGGW Crosses keyboard, also in GPIOs, also known as MiaoMiao’s PCB variant.
-
-![Photo of Crosses keyboard](https://ergokeyboards.com/cdn/shop/files/crosses-2-web_0e24a52e-7d28-4e77-b14a-005f2d0b4e9c.webp)
+![Crosses keyboard with dual trackballs](assets/keyboard-dual-trackball.avif)
 
 ## Keymap
 
 ![Keymap](keymap-drawer/crosses.svg)
 
+## Philosophy
+
+This build is about doing more with less. The goal is a 36-key layout that minimises chording while giving full access to every key you need — numbers, symbols, function keys, navigation, and mouse control — without ever reaching for a separate pointing device. Layers activate through thumb combos rather than dedicated keys, keeping the base layout clean and fluent with macOS shortcuts and modifiers as first-class citizens. The dual trackballs integrate into the layer system so each thumb side has a natural role: cursor on the right, scroll on the left. The result is a genuinely mouseless setup that doesn't sacrifice the fluency of a standard Mac layout.
+
 ## Features
 
-- **36 keys** (3x5 + 3 thumb keys per side)
-- **PMW3610 trackball** on the left side
-- **ZMK Studio** support for real-time keymap editing
-- **Miryoku-inspired** layout with macOS home row mods (Cmd/Opt)
+- **36 keys** — 3×5 + 3 thumb keys per side
+- **Dual PMW3610 trackballs** — right for cursor, left for scroll
+- **6 layers** — Base, NAV, NUM, SYM, FUN, MOUSE — all activated via thumb combos
+- **Caps Word** — smart capitalisation for typing `SCREAMING_SNAKE_CASE`
+- **ZMK Studio** — real-time keymap editing via USB (right side)
+- **Keyboard Layers App** — companion app to display active layer on a secondary screen
+- **Battery reporting** — charge level proxied from both halves to the host
+- **Bluetooth** — up to 5 device profiles, BT 4.0 compatible
 
 ## Hardware
 
@@ -23,7 +29,8 @@ This build uses diode-direction as "row2col" and differs from the original GGGW 
 |-----------|---------------|
 | MCU | nice!nano v2 |
 | Switches | Kailh Choc |
-| Trackball | PMW3610 sensor |
+| Trackball sensor | PMW3610 (×2) |
+| Firmware | ZMK v0.3.0 |
 
 ## Building Firmware
 
@@ -33,7 +40,7 @@ Push changes to the repository and GitHub Actions will automatically build the f
 
 ### Option 2: Local Build with Docker (Recommended)
 
-It's faster when experimenting with different configurations and allows access to the ZMK framework.
+Faster for iterating on config changes and gives direct access to the ZMK framework.
 
 #### Prerequisites
 
@@ -45,7 +52,7 @@ docker pull zmkfirmware/zmk-dev-arm:stable
 #### Build Commands
 
 ```bash
-# First time: Initialize ZMK workspace (only needed once, ~5-10 min)
+# First time: initialize ZMK workspace (only needed once, ~5-10 min)
 ./build-local.sh init
 
 # Build all firmware (left, right, settings_reset)
@@ -68,25 +75,6 @@ Firmware files will be in the `./firmware/` folder:
 - `nice_nano_v2-crosses_right.uf2`
 - `nice_nano_v2-settings_reset.uf2`
 
-
-### Support for Bluetooth v4
-
-Enable Bluetooth 4.0 legacy pairing (WARNING: less secure than BT 4.2+)
-This disables the requirement for Secure Connections pairing, [BT_SMP_SC_PAIR_ONLY](https://docs.nordicsemi.com/bundle/ncs-1.9.0/page/kconfig/CONFIG_BT_SMP_SC_PAIR_ONLY.html).
-
-Remove the line from the file .zmk-workspace/zmk/app/Kconfig:
-```
-select BT_SMP_SC_PAIR_ONLY
-```
-
-Add to the file config/crosses.conf:
-
-```
-CONFIG_BT_SMP_SC_PAIR_ONLY=n
-```
-
-Then rebuild the firmware.
-
 ## Flashing
 
 1. **Enter bootloader**: Double-tap the reset button on your nice!nano
@@ -94,7 +82,7 @@ Then rebuild the firmware.
 3. **Flash**: Drag the `.uf2` file to the drive
 4. **Repeat** for the other half
 
-### Troubleshooting
+## Troubleshooting
 
 If you have Bluetooth pairing issues:
 1. Flash `settings_reset.uf2` to **both** halves
@@ -104,49 +92,28 @@ If you have Bluetooth pairing issues:
 
 ## Trackball
 
-The trackball is on the left side. The mouse layer will be active after using the trackball for 400ms.
+Each half has a PMW3610 trackball with a dedicated role:
 
-- **Normal mode**: Move cursor (BASE layer)
-- **Scroll mode**: Hold NAV layer (layer 1) and move trackball
-- **Buttons**: Hold MOUSE layer (layer 2)
+- **Right trackball** — cursor control at all times
+- **Left trackball** — dedicated scroll; horizontal movement is suppressed so only vertical scroll fires (prevents terminals interpreting horizontal movement as arrow keys)
 
-## Configuration Files
-
-| File | Purpose |
-|------|---------|
-| `config/crosses.keymap` | Keymap and layers |
-| `config/crosses.conf` | Global settings (sleep, Bluetooth) |
-| `config/boards/shields/crosses/crosses_right.conf` | Right side (trackball) |
-| `config/boards/shields/crosses/crosses_left.conf` | Left side |
-
-## Keyboard Layers App companion
-
-Display the selected keyboard layer layout on screen to assist your to memorize the key's locations.
-
-It allows you to display the layout in a remote screen, so you can use a tablet or similar to save space on your main screen.
-
-Details here: https://github.com/maatthc/keyboard_layers_app_companion
+CPI is 1600 with a 4× divider (effective 400 CPI) for comfortable everyday movement. Snipe mode drops to 200 CPI for precision work. Mouse buttons (left/middle/right click) are available on the MOUSE layer, toggled via a right thumb combo.
 
 ## ZMK Studio
 
-The right side has ZMK Studio enabled. Connect via USB and visit [ZMK Studio](https://zmk.studio) to edit your keymap in real-time.
+The right side has ZMK Studio enabled. Connect via USB and visit [ZMK Studio](https://zmk.studio) to edit your keymap in real-time without rebuilding firmware.
+
+## Keyboard Layers App
+
+Display your active keyboard layer on a secondary screen (tablet, phone, or spare monitor) to help memorise key positions while you're learning the layout.
+
+Details: https://github.com/maatthc/keyboard_layers_app_companion
 
 ## Keymap Drawer
 
-The keymap visualization is automatically generated using [keymap-drawer](https://github.com/caksoylar/keymap-drawer).
-
-### Automatic Updates
-
-A GitHub Actions workflow automatically regenerates the keymap SVG when you push changes to:
-- `config/crosses.keymap`
-- `config/*.dtsi`
-- `keymap_drawer.config.yaml`
-
-The generated files are saved to `keymap-drawer/` folder.
+The keymap visualisation is automatically regenerated by GitHub Actions whenever you push changes to `config/crosses.keymap`, `config/*.dtsi`, or `keymap_drawer.config.yaml`. Output is saved to `keymap-drawer/`.
 
 ### Manual Generation
-
-To generate the keymap locally:
 
 ```bash
 # Install keymap-drawer
@@ -159,15 +126,18 @@ keymap -c keymap_drawer.config.yaml parse -z config/crosses.keymap > keymap.yaml
 keymap -c keymap_drawer.config.yaml draw keymap.yaml > keymap.svg
 ```
 
-### Configuration
+The `keymap_drawer.config.yaml` file controls styling, glyphs, and how ZMK keycodes are rendered.
 
-The `keymap_drawer.config.yaml` file customizes:
-- **Styling**: Colors, fonts, key appearance
-- **Glyphs**: Icons for special keys (media, modifiers, etc.)
-- **Layout**: Ortho split 3x6+3 configuration
-- **Key mappings**: How ZMK keycodes are displayed
+## Configuration Files
+
+| File | Purpose |
+|------|---------|
+| `config/crosses.keymap` | Keymap and layers |
+| `config/crosses.conf` | Global settings (sleep, Bluetooth) |
+| `config/boards/shields/crosses/crosses_left.conf` | Left side — trackball peripheral |
+| `config/boards/shields/crosses/crosses_right.conf` | Right side — central, ZMK Studio |
 
 ## Credits
 
-- [HeeTuic - this Crosses build](https://github.com/HeeTuic/zmk-for-crosses)
+- [HeeTuic - Crosses ZMK build](https://github.com/HeeTuic/zmk-for-crosses)
 - [GGGW Crosses Keyboard](https://github.com/Good-Great-Grand-Wonderful/crosses)
