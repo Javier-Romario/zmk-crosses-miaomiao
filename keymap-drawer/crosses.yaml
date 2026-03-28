@@ -38,7 +38,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:backspace$$
   Navigation:
-  - {t: Base, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -69,13 +69,13 @@ layers:
   - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - $$mdi:keyboard-return$$
   - $$mdi:backspace$$
   - DEL
   Numbers:
-  - {t: Base, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -107,8 +107,8 @@ layers:
   - \
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '-'
+  - {type: held}
+  - {t: '-', type: held}
   - '0'
   - .
   Symbols:
@@ -149,7 +149,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Function:
-  - {t: Base, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - F7
   - F8
   - F9
@@ -182,9 +182,9 @@ layers:
   - APP
   - $$mdi:keyboard-space$$
   - LGUI
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   Mouse+Media:
   - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -228,12 +228,12 @@ combos:
 - p: [30, 31]
   k: Sft+Ctl+Alt+LGUI
 - p: [31, 32]
-  k: {t: Navigation, h: toggle}
+  k: Navigation
 - p: [32, 33]
-  k: {t: Numbers, h: toggle}
+  k: Numbers
 - p: [31, 34]
   k: {t: Symbols, h: toggle}
 - p: [33, 35]
-  k: {t: Function, h: toggle}
+  k: Function
 - p: [34, 35]
   k: {t: Mouse+Media, h: toggle}
