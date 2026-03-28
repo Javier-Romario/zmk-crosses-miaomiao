@@ -50,14 +50,14 @@
         combo_nav {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&tog NAV>;
+            bindings = <&mo NAV>;
         };
 
         // Cross-hand (inner thumbs)
         combo_num {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&tog NUM>;
+            bindings = <&mo NUM>;
         };
 
         // Right thumb pairs
@@ -69,7 +69,7 @@
         combo_fun {
             timeout-ms = <50>;
             key-positions = <33 35>;
-            bindings = <&tog FUN>;
+            bindings = <&mo FUN>;
         };
 
         // Right thumb adjacent — MOUSE/Media
@@ -105,7 +105,7 @@
         nav_layer {
             display-name = "Navigation";
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-            // │  → Base  │          │          │          │          │   │  ⌘⇧Z     │   ⌘V     │   ⌘C     │   ⌘X     │   ⌘Z     │
+            // │          │          │          │          │          │   │  ⌘⇧Z     │   ⌘V     │   ⌘C     │   ⌘X     │   ⌘Z     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │          │          │          │          │          │   │   Left   │   Down   │    Up    │  Right   │ CapsWord │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
@@ -114,7 +114,7 @@
             //                                  │          │  (held)  │(h)│   │  Return  │  Bspc    │   Del    │
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
             bindings = <
-&to BASE    &trans      &trans      &trans      &trans            &kp LG(LS(Z))  &kp LG(V)    &kp LG(C)    &kp LG(X)    &kp LG(Z)
+&trans      &trans      &trans      &trans      &trans            &kp LG(LS(Z))  &kp LG(V)    &kp LG(C)    &kp LG(X)    &kp LG(Z)
 &trans      &trans      &trans      &trans      &trans            &kp LEFT       &kp DOWN      &kp UP       &kp RIGHT    &caps_word
 &trans      &trans      &trans      &trans      &trans            &kp HOME       &kp PG_DN     &kp PG_UP    &kp END      &trans
             &trans      &trans      &trans                        &kp RET        &kp BSPC      &kp DEL
@@ -124,7 +124,7 @@
         num_layer {
             display-name = "Numbers";
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-            // │  → Base  │          │          │          │          │   │    [     │    7     │    8     │    9     │    ]     │
+            // │          │          │          │          │          │   │    [     │    7     │    8     │    9     │    ]     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │          │          │          │          │          │   │    ;     │    4     │    5     │    6     │    =     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
@@ -133,7 +133,7 @@
             //                                  │  (held)  │          │(h)│   │    -     │    0     │    .     │
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
             bindings = <
-&to BASE    &trans      &trans      &trans      &trans            &kp LBKT     &kp N7       &kp N8       &kp N9       &kp RBKT
+&trans      &trans      &trans      &trans      &trans            &kp LBKT     &kp N7       &kp N8       &kp N9       &kp RBKT
 &trans      &trans      &trans      &trans      &trans            &kp SEMI     &kp N4       &kp N5       &kp N6       &kp EQUAL
 &trans      &trans      &trans      &trans      &trans            &kp GRAVE    &kp N1       &kp N2       &kp N3       &kp BSLH
             &trans      &trans      &trans                        &kp MINUS    &kp N0       &kp DOT
@@ -167,7 +167,7 @@
         fun_layer {
             display-name = "Function";
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-            // │  → Base  │    F7    │    F8    │    F9    │  PrtSc   │   │   F12    │          │          │          │          │
+            // │          │    F7    │    F8    │    F9    │  PrtSc   │   │   F12    │          │          │          │          │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │   F11    │    F4    │    F5    │    F6    │  ScLk    │   │          │          │          │          │          │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
@@ -176,7 +176,7 @@
             //                                  │   Menu   │  Space   │ ⌘ │   │          │  (held)  │  (held)  │
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
             bindings = <
-&to BASE   &kp F7     &kp F8     &kp F9     &kp PSCRN        &kp F12       &trans        &trans        &trans        &trans
+&trans     &kp F7     &kp F8     &kp F9     &kp PSCRN        &kp F12       &trans        &trans        &trans        &trans
 &kp F11    &kp F4     &kp F5     &kp F6     &kp SLCK         &trans        &trans        &trans        &trans        &trans
 &kp F10    &kp F1     &kp F2     &kp F3     &kp PAUSE_BREAK  &trans        &trans        &trans        &trans        &trans
            &kp K_APP  &kp SPACE  &kp LGUI                    &trans        &trans        &trans
