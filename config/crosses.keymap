@@ -188,7 +188,7 @@
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
             // │  → Base  │          │  Bri Dn  │  Bri Up  │          │   │  BT 1    │  BT 2    │  BT 3    │  BT 4    │  BT 5    │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │   Prev   │  Vol Dn  │  Vol Up  │   Next   │ BT CLR  │   │ L Click  │ M Click  │ R Click  │          │ BT CLR A │
+            // │   Prev   │  Vol Dn  │  Vol Up  │   Next   │ BT CLR  │   │ L Click  │ M Click  │ R Click  │          │          │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │  RGB Eff │  Hue +   │  Sat +   │  Sat -   │  RGB Tog │   │          │          │          │          │ Boot     │
             // └──────────┴──────────┴──────────┼──────────┼──────────┼───┤   ├──────────┼──────────┼──────────┴──────────┴──────────┘
@@ -196,7 +196,7 @@
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
             bindings = <
 &to BASE         &trans           &kp C_BRI_DN     &kp C_BRI_UP     &trans           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT       &bt BT_CLR       &mkp LCLK     &mkp MCLK     &mkp RCLK     &trans        &bt BT_CLR_ALL
+&kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT       &bt BT_CLR       &mkp LCLK     &mkp MCLK     &mkp RCLK     &trans        &trans
 &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_TOG  &trans        &trans        &trans        &trans        &bootloader
                  &kp C_MUTE       &kp C_PP         &kp C_STOP                        &trans        &trans        &trans
             >;
