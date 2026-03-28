@@ -113,38 +113,38 @@ layers:
   - .
   Symbols:
   - {t: Base, h: toggle}
-  - '&'
-  - '*'
-  - (
-  - '}'
-  - '{'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - ':'
-  - $
-  - '%'
-  - ^
-  - +
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
   - '!'
   - '@'
   - '#'
-  - '|'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $
+  - '['
+  - ']'
+  - '-'
+  - '='
+  - \
+  - '%'
+  - ^
+  - '&'
+  - '*'
   - (
+  - ;
+  - ''''
+  - ','
+  - .
+  - /
+  - $$mdi:apple-keyboard-shift$$
   - )
-  - _
+  - '`'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -231,7 +231,7 @@ combos:
   k: {t: Navigation, h: toggle}
 - p: [32, 33]
   k: {t: Numbers, h: toggle}
-- p: [33, 34]
+- p: [31, 34]
   k: {t: Symbols, h: toggle}
 - p: [33, 35]
   k: {t: Function, h: toggle}
