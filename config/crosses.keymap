@@ -145,9 +145,9 @@
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
             // │  → Base  │    !     │    @     │    #     │    $     │   │    [     │    ]     │    -     │    =     │    \     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │    %     │    ^     │    &     │    *     │    (     │   │    ;     │    '     │    ,     │    .     │    /     │
+            // │    %     │    ^     │    &     │    *     │    (     │   │    ;     │    '     │    ,     │    .     │  //Shft  │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │  LShft   │    )     │    `     │          │          │   │  RShft   │          │          │          │          │
+            // │  LShft   │    )     │    `     │          │          │   │          │          │          │          │          │
             // └──────────┴──────────┴──────────┼──────────┼──────────┼───┤   ├──────────┼──────────┼──────────┴──────────┴──────────┘
             //                                  │          │          │   │   │          │          │          │
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
@@ -157,9 +157,9 @@
             //   ; → :    ' → "    , → <    . → >    / → ?
             //   ` → ~  (left side)
             bindings = <
-&to BASE   &kp EXCL   &kp AT     &kp HASH   &kp DLLR     &kp LBKT   &kp RBKT   &kp MINUS  &kp EQUAL  &kp BSLH
-&kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR     &kp SEMI   &kp SQT    &kp COMMA  &kp DOT    &kp FSLH
-&kp LSHFT  &kp RPAR   &kp GRAVE  &trans     &trans       &kp RSHFT  &trans     &trans     &trans     &trans
+&to BASE   &kp EXCL   &kp AT     &kp HASH   &kp DLLR     &kp LBKT   &kp RBKT   &kp MINUS  &kp EQUAL       &kp BSLH
+&kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR     &kp SEMI   &kp SQT    &kp COMMA  &kp DOT    &mt RSHFT FSLH
+&kp LSHFT  &kp RPAR   &kp GRAVE  &trans     &trans       &trans     &trans     &trans     &trans          &trans
            &trans     &trans     &trans                  &trans     &trans     &trans
             >;
         };
