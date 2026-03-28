@@ -63,7 +63,7 @@
         // Right thumb pairs
         combo_sym {
             timeout-ms = <50>;
-            key-positions = <33 34>;
+            key-positions = <31 34>;
             bindings = <&tog SYM>;
         };
         combo_fun {
