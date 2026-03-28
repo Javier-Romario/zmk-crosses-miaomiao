@@ -16,6 +16,15 @@
         codes = <INPUT_REL_X>;
     };
 
+    // Scale Y movement to 1/2 before it reaches the scroll accumulator.
+    // Stacks with SCROLL_TICK: together they significantly reduce scroll speed.
+    left_tb_y_scaler: left_tb_y_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <2>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_Y>;
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
@@ -24,7 +33,6 @@
     left_trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
-        input-processors = <&left_tb_x_suppressor 0 1>, <&zip_xy_to_scroll_mapper>;
+        input-processors = <&left_tb_x_suppressor 0 1>, <&left_tb_y_scaler 1 2>, <&zip_xy_to_scroll_mapper>;
     };
 };
-
