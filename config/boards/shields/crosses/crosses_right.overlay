@@ -6,14 +6,22 @@
 };
 
 / {
-    // Suppress horizontal (X) movement so only vertical scroll fires.
-    // Without this, REL_X gets mapped to REL_HWHEEL which terminals
-    // interpret as left/right arrow keystrokes.
+    // Suppress horizontal (X) movement to prevent cursor drift.
     left_tb_x_suppressor: left_tb_x_suppressor {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
         type = <INPUT_EV_REL>;
         codes = <INPUT_REL_X>;
+    };
+
+    // Map only REL_Y → WHEEL (vertical scroll).
+    // Unlike zip_xy_to_scroll_mapper, this does NOT map REL_X → HWHEEL,
+    // so no horizontal scroll events are ever sent to the host.
+    left_tb_y_to_scroll: left_tb_y_to_scroll {
+        compatible = "zmk,input-processor-code-mapper";
+        #input-processor-cells = <0>;
+        type = <INPUT_EV_REL>;
+        map = <INPUT_REL_Y INPUT_REL_WHEEL>;
     };
 
     trackball_listener {
@@ -24,6 +32,6 @@
     left_trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
-        input-processors = <&left_tb_x_suppressor 0 1>, <&zip_xy_to_scroll_mapper>;
+        input-processors = <&left_tb_x_suppressor 0 1>, <&left_tb_y_to_scroll>;
     };
 };
