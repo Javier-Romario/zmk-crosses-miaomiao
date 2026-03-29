@@ -220,8 +220,8 @@ layers:
   - PP
   - STOP
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
 combos:
 - p: [0, 1]
   k: $$mdi:keyboard-tab$$
@@ -236,4 +236,4 @@ combos:
 - p: [33, 35]
   k: Function
 - p: [34, 35]
-  k: '&sl_tog 5'
+  k: {t: Mouse+Media, h: Mouse+Media}

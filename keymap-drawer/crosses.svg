@@ -456,9 +456,11 @@ rect.held, rect.combo.held {
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
-<tspan x="448" dy="-0.6em">&amp;sl_tog</tspan><tspan x="448" dy="1.2em">5</tspan>
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-</g>
+<a href="#MouseMedia">
+<text x="448" y="207" class="combo hold layer-activator"><tspan style="font-size: 64%">Mouse+Media</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 280)" class="layer-Navigation">
@@ -684,9 +686,11 @@ rect.held, rect.combo.held {
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
-<tspan x="448" dy="-0.6em">&amp;sl_tog</tspan><tspan x="448" dy="1.2em">5</tspan>
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-</g>
+<a href="#MouseMedia">
+<text x="448" y="207" class="combo hold layer-activator"><tspan style="font-size: 64%">Mouse+Media</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 560)" class="layer-Numbers">
@@ -911,9 +915,11 @@ rect.held, rect.combo.held {
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
-<tspan x="448" dy="-0.6em">&amp;sl_tog</tspan><tspan x="448" dy="1.2em">5</tspan>
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-</g>
+<a href="#MouseMedia">
+<text x="448" y="207" class="combo hold layer-activator"><tspan style="font-size: 64%">Mouse+Media</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 840)" class="layer-Symbols">
@@ -1142,9 +1148,11 @@ rect.held, rect.combo.held {
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
-<tspan x="448" dy="-0.6em">&amp;sl_tog</tspan><tspan x="448" dy="1.2em">5</tspan>
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-</g>
+<a href="#MouseMedia">
+<text x="448" y="207" class="combo hold layer-activator"><tspan style="font-size: 64%">Mouse+Media</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1120)" class="layer-Function">
@@ -1370,9 +1378,11 @@ rect.held, rect.combo.held {
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
-<tspan x="448" dy="-0.6em">&amp;sl_tog</tspan><tspan x="448" dy="1.2em">5</tspan>
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-</g>
+<a href="#MouseMedia">
+<text x="448" y="207" class="combo hold layer-activator"><tspan style="font-size: 64%">Mouse+Media</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1400)" class="layer-Mouse+Media">
@@ -1571,15 +1581,13 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-11" y="-15" height="22" width="22.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(420, 196)" class="key trans keypos-34">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-11" y="-15" height="22" width="22.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(420, 196)" class="key held keypos-34">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
-<g transform="translate(476, 196)" class="key trans keypos-35">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-11" y="-15" height="22" width="22.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(476, 196)" class="key held keypos-35">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="42" y="15" width="28" height="26" class="combo"/>
@@ -1621,9 +1629,11 @@ rect.held, rect.combo.held {
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <text x="448" y="196" class="combo tap">
-<tspan x="448" dy="-0.6em">&amp;sl_tog</tspan><tspan x="448" dy="1.2em">5</tspan>
+<tspan x="448" dy="-0.6em">Mouse+</tspan><tspan x="448" dy="1.2em">Media</tspan>
 </text>
-</g>
+<a href="#MouseMedia">
+<text x="448" y="207" class="combo hold layer-activator"><tspan style="font-size: 64%">Mouse+Media</tspan></text>
+</a></g>
 </g>
 </g>
 </svg>
