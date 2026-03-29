@@ -112,13 +112,6 @@
             bindings = <&mo NAV>;
         };
 
-        // Cross-hand (inner thumbs)
-        combo_num {
-            timeout-ms = <50>;
-            key-positions = <32 33>;
-            bindings = <&mo NUM>;
-        };
-
         // Right thumb pairs
         combo_sym {
             timeout-ms = <50>;
@@ -155,9 +148,9 @@
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
             bindings = <
 &mt ESC Q    &kp W        &kp E        &kp R        &kp T            &kp Y        &kp U        &kp I        &kp O        &kp P
-&kp A        &kp S        &kp D        &kp F        &kp G            &kp H        &kp J        &kp K        &kp L        &kp SQT
+&kp A        &kp S        &kp D        &kp F        &kp G            &kp H        &kp J        &kp K        &kp L        &lt NUM SQT
 &mt LSHFT Z  &kp X        &kp C        &kp V        &kp B            &kp N        &kp M        &kp COMMA    &kp DOT      &mt RSHFT FSLH
-             &kp LCTRL   &kp LALT     &kp LGUI                      &kp RET      &kp SPACE    &kp BSPC
+             &kp LCTRL   &mt LALT TAB &kp LGUI                      &kp RET      &kp SPACE    &kp BSPC
             >;
         };
 
