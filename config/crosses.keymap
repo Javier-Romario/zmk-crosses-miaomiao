@@ -63,6 +63,30 @@
             bindings = <&kp LBKT>, <&kp RBKT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        // Pipe primary, backslash on shift
+        pipe_bslh: pipe_bslh {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE>, <&kp BSLH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // Less-than primary, comma on shift
+        lt_comma: lt_comma {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LT>, <&kp COMMA>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // Greater-than primary, dot on shift
+        gt_dot: gt_dot {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp GT>, <&kp DOT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -205,12 +229,12 @@
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
             //
             // Shift pairs:
-            //   ' → "    - → _    = → +    < → ,    > → .   (top row right)
-            //   ; → :    { → (    } → )    [ → ]    | → \   (home row right)
+            //   ' → "    - → _    = → +    , → <    . → >   (top row right, mod-morph)
+            //   ; → :    { → (    } → )    [ → ]    | → \   (home row right, mod-morph)
             //   ` → ~                                        (bottom row left)
             bindings = <
-&to BASE      &kp EXCL      &kp PRCNT     &kp CARET     &kp LA(N3)    &kp SQT           &kp MINUS         &kp EQUAL         &kp LT            &kp GT
-&kp DLLR      &kp AMPS      &kp ASTRK     &kp AT        &kp HASH      &kp SEMI          &brace_paren_open &brace_paren_close &bracket_pair     &kp PIPE
+&to BASE      &kp EXCL      &kp PRCNT     &kp CARET     &kp LA(N3)    &kp SQT           &kp MINUS         &kp EQUAL         &lt_comma         &gt_dot
+&kp DLLR      &kp AMPS      &kp ASTRK     &kp AT        &kp HASH      &kp SEMI          &brace_paren_open &brace_paren_close &bracket_pair     &pipe_bslh
 &kp LSHFT     &kp GRAVE     &trans        &trans        &trans        &m_pipe_pipe      &m_interp         &m_rust_range     &m_opt_chain      &kp RSHFT
               &trans        &trans        &trans                      &trans            &trans            &trans
             >;
