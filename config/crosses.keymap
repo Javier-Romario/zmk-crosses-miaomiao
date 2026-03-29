@@ -195,24 +195,24 @@
         sym_layer {
             display-name = "Symbols";
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-            // │  → Base  │    !     │    @     │    #     │    $     │   │    [     │    ]     │    -     │    =     │    \     │
+            // │  → Base  │    !     │    %     │    ^     │    £     │   │    '     │    -     │    =     │    <     │    >     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │    %     │    ^     │    &     │    *     │    (     │   │    ;     │    '     │    ,     │    .     │  //Shft  │
+            // │    $     │    &     │    *     │    @     │    #     │   │    ;     │  { / (   │  } / )   │  [ / ]   │    |     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │  LShft   │    )     │    `     │          │          │   │          │          │          │          │          │
+            // │  LShft   │   ` / ~  │          │          │          │   │    ||    │   ${}    │   ..=    │    ?.    │  RShft   │
             // └──────────┴──────────┴──────────┼──────────┼──────────┼───┤   ├──────────┼──────────┼──────────┴──────────┴──────────┘
             //                                  │          │          │   │   │          │          │          │
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
             //
-            // Right side: unshifted key, Shift gives paired symbol:
-            //   [ → {    ] → }    - → _    = → +    \ → |
-            //   ; → :    ' → "    , → <    . → >    / → ?
-            //   ` → ~  (left side)
+            // Shift pairs:
+            //   ' → "    - → _    = → +    < → ,    > → .   (top row right)
+            //   ; → :    { → (    } → )    [ → ]    | → \   (home row right)
+            //   ` → ~                                        (bottom row left)
             bindings = <
-&to BASE   &kp EXCL   &kp AT     &kp HASH   &kp DLLR     &kp LBKT   &kp RBKT   &kp MINUS  &kp EQUAL       &kp BSLH
-&kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR     &kp SEMI   &kp SQT    &kp COMMA  &kp DOT    &mt RSHFT FSLH
-&kp LSHFT  &kp RPAR   &kp GRAVE  &trans     &trans       &trans     &trans     &trans     &trans          &trans
-           &trans     &trans     &trans                  &trans     &trans     &trans
+&to BASE      &kp EXCL      &kp PRCNT     &kp CARET     &kp LA(N3)    &kp SQT           &kp MINUS         &kp EQUAL         &kp LT            &kp GT
+&kp DLLR      &kp AMPS      &kp ASTRK     &kp AT        &kp HASH      &kp SEMI          &brace_paren_open &brace_paren_close &bracket_pair     &kp PIPE
+&kp LSHFT     &kp GRAVE     &trans        &trans        &trans        &m_pipe_pipe      &m_interp         &m_rust_range     &m_opt_chain      &kp RSHFT
+              &trans        &trans        &trans                      &trans            &trans            &trans
             >;
         };
 
