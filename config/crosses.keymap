@@ -87,6 +87,14 @@
             bindings = <&kp GT>, <&kp DOT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        // Tilde primary, backtick on shift
+        tilde_grave: tilde_grave {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE>, <&kp GRAVE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -223,7 +231,7 @@
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │    $     │    &     │    *     │    @     │    #     │   │    ;     │  { / (   │  } / )   │  [ / ]   │    |     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │  LShft   │   ` / ~  │          │          │          │   │    ||    │   ${}    │    ~     │    ?.    │  RShft   │
+            // │  LShft   │   ` / ~  │          │          │          │   │    ||    │   ${}    │  ~ / `   │    ?.    │  RShft   │
             // └──────────┴──────────┴──────────┼──────────┼──────────┼───┤   ├──────────┼──────────┼──────────┴──────────┴──────────┘
             //                                  │          │          │   │   │          │          │          │
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
@@ -235,7 +243,7 @@
             bindings = <
 &to BASE      &kp EXCL      &kp PRCNT     &kp CARET     &kp LA(N3)    &kp SQT           &kp MINUS         &kp EQUAL         &lt_comma         &gt_dot
 &kp DLLR      &kp AMPS      &kp ASTRK     &kp AT        &kp HASH      &kp SEMI          &brace_paren_open &brace_paren_close &bracket_pair     &pipe_bslh
-&kp LSHFT     &kp GRAVE     &trans        &trans        &trans        &m_pipe_pipe      &m_interp         &kp TILDE         &m_opt_chain      &kp RSHFT
+&kp LSHFT     &kp GRAVE     &trans        &trans        &trans        &m_pipe_pipe      &m_interp         &tilde_grave      &m_opt_chain      &kp RSHFT
               &trans        &trans        &trans                      &trans            &trans            &trans
             >;
         };
