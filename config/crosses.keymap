@@ -65,6 +65,32 @@
         };
     };
 
+    macros {
+        m_pipe_pipe: m_pipe_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp PIPE>;
+        };
+
+        m_interp: m_interp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DLLR &kp LBRC &kp RBRC>;
+        };
+
+        m_rust_range: m_rust_range {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp DOT &kp EQUAL>;
+        };
+
+        m_opt_chain: m_opt_chain {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK &kp DOT>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
