@@ -139,7 +139,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&m_pipe_pipe'
   - '&m_interp'
-  - '&m_rust_range'
+  - '~'
   - '&m_opt_chain'
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
