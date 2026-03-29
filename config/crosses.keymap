@@ -34,7 +34,7 @@
         // Tap = one-shot layer, Hold = toggle layer
         sl_tog: sl_tog {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&tog>, <&sl>;
@@ -85,7 +85,7 @@
         combo_mouse {
             timeout-ms = <50>;
             key-positions = <34 35>;
-            bindings = <&sl_tog MOUSE>;
+            bindings = <&sl_tog MOUSE MOUSE>;
         };
     };
 
