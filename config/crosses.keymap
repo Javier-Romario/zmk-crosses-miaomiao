@@ -39,6 +39,30 @@
             tapping-term-ms = <200>;
             bindings = <&tog>, <&sl>;
         };
+
+        // Opening delimiter: tap={, shift=(
+        brace_paren_open: brace_paren_open {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp LPAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // Closing delimiter: tap=}, shift=)
+        brace_paren_close: brace_paren_close {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBRC>, <&kp RPAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // Square brackets: tap=[, shift=]
+        bracket_pair: bracket_pair {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp RBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
