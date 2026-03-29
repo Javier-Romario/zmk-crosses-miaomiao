@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - ''''
+  - {t: '''', h: Numbers}
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
@@ -32,7 +32,7 @@ layers:
   - .
   - {t: /, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-option$$'}
   - LGUI
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
@@ -94,7 +94,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - '='
+  - {t: '=', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -107,41 +107,41 @@ layers:
   - \
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '-', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '-'
   - '0'
   - .
   Symbols:
   - {t: Base, h: toggle}
   - '!'
-  - '@'
-  - '#'
-  - $
-  - '['
-  - ']'
-  - '-'
-  - '='
-  - \
   - '%'
   - ^
+  - Alt+3
+  - ''''
+  - '-'
+  - '='
+  - <
+  - '>'
+  - $
   - '&'
   - '*'
-  - (
+  - '@'
+  - '#'
   - ;
-  - ''''
-  - ','
-  - .
-  - {t: /, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '{', s: (}
+  - {t: '}', s: )}
+  - {t: '[', s: ']'}
+  - '|'
   - $$mdi:apple-keyboard-shift$$
-  - )
   - '`'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&m_pipe_pipe'
+  - '&m_interp'
+  - '&m_rust_range'
+  - '&m_opt_chain'
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -229,8 +229,6 @@ combos:
   k: Sft+Ctl+Alt+LGUI
 - p: [31, 32]
   k: Navigation
-- p: [32, 33]
-  k: Numbers
 - p: [31, 34]
   k: {t: Symbols, h: toggle}
 - p: [33, 35]
