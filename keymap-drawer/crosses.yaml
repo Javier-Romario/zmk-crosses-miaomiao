@@ -10,32 +10,32 @@ layers:
   - {t: U, h: _}
   - {t: I, h: '='}
   - {t: O, h: +}
-  - {t: P, h: '*'}
+  - {t: P, h: ':'}
   - A
   - S
   - D
   - F
   - G
-  - {t: H, h: ;}
+  - H
   - J
   - K
   - L
   - {t: '''', h: Numbers}
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: C, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: V, h: LGUI}
+  - C
+  - V
   - B
   - N
   - {t: M, h: RGUI}
   - {t: ',', h: '$$mdi:apple-keyboard-option$$'}
   - {t: ., h: '$$mdi:apple-keyboard-control$$'}
   - {t: /, h: '$$mdi:apple-keyboard-shift$$'}
-  - Sft+Ctl+Alt+LGUI
-  - Navigation
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-esc$$', h: Sft+Ctl+Alt+LGUI}
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-space$$', h: LGUI}
   - $$mdi:keyboard-return$$
-  - $$mdi:keyboard-space$$
+  - Navigation
   - $$mdi:backspace$$
   Navigation:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -53,26 +53,26 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - ←
-  - ↓
-  - ↑
-  - →
+  - {t: '$$mdi:mouse-left-click$$', h: left}
+  - {t: '$$mdi:mouse$$', h: middle}
+  - {t: '$$mdi:mouse-right-click$$', h: right}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&caps_word'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - HOME
-  - $$mdi:transfer-down$$
-  - $$mdi:transfer-up$$
-  - END
+  - ←
+  - ↓
+  - ↑
+  - →
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-return$$
-  - $$mdi:backspace$$
+  - {t: '$$mdi:backspace$$', type: held}
   - DEL
   Numbers:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -126,8 +126,8 @@ layers:
   - '&'
   - '*'
   - '@'
-  - '#'
-  - ;
+  - {t: '#', type: held}
+  - {t: ;, s: ':', type: held}
   - {t: '{', s: (}
   - {t: '}', s: )}
   - {t: '[', s: ']'}
@@ -185,7 +185,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  Mouse+Media:
+  Media:
   - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - BRI DN
@@ -201,9 +201,9 @@ layers:
   - VOL UP
   - NEXT
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:mouse-left-click$$', h: left}
-  - {t: '$$mdi:mouse$$', h: middle}
-  - {t: '$$mdi:mouse-right-click$$', h: right}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFF
@@ -223,9 +223,9 @@ layers:
   - {type: held}
   - {type: held}
 combos:
-- p: [31, 34]
-  k: {t: Symbols, h: toggle}
+- p: [14, 15]
+  k: {t: Symbols, h: Symbols}
 - p: [33, 35]
   k: Function
 - p: [34, 35]
-  k: {t: Mouse+Media, h: Mouse+Media}
+  k: {t: Media, h: Media}
