@@ -189,19 +189,19 @@
         nav_layer {
             display-name = "Navigation";
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-            // │          │          │          │          │          │   │  ⌘⇧Z     │   ⌘V     │   ⌘C     │   ⌘X     │   ⌘Z     │
+            // │  → Base  │          │          │          │          │   │  ⌘⇧Z     │   ⌘V     │   ⌘C     │   ⌘X     │   ⌘Z     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │          │          │          │          │          │   │ L Click  │ M Click  │ R Click  │          │ CapsWord │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │          │          │          │          │          │   │   Left   │   Down   │    Up    │  Right   │          │
             // └──────────┴──────────┴──────────┼──────────┼──────────┼───┤   ├──────────┼──────────┼──────────┴──────────┴──────────┘
-            //                                  │          │  (held)  │(h)│   │  Return  │  Bspc    │   Del    │
+            //                                  │          │  (held)  │(h)│   │  Return  │ → Base   │   Bspc   │
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
             bindings = <
-&trans      &trans      &trans      &trans      &trans            &kp LG(LS(Z))  &kp LG(V)    &kp LG(C)    &kp LG(X)    &kp LG(Z)
+&to BASE    &trans      &trans      &trans      &trans            &kp LG(LS(Z))  &kp LG(V)    &kp LG(C)    &kp LG(X)    &kp LG(Z)
 &trans      &trans      &trans      &trans      &trans            &mkp LCLK      &mkp MCLK    &mkp RCLK    &trans       &caps_word
 &trans      &trans      &trans      &trans      &trans            &kp LEFT       &kp DOWN     &kp UP       &kp RIGHT    &trans
-            &trans      &trans      &trans                        &kp RET        &kp BSPC     &kp DEL
+            &trans      &trans      &trans                        &kp RET        &to BASE     &kp BSPC
             >;
         };
 
