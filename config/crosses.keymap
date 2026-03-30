@@ -136,12 +136,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp TAB>;
-        };
-
         // Thumb pairs
         combo_sym {
             timeout-ms = <50>;
@@ -168,19 +162,19 @@
         base_layer {
             display-name = "Base";
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-            // │  Q/Esc   │  W / !   │  E / @   │  R / #   │    T     │   │  Y / -   │  U / _   │  I / =   │  O / +   │  P / *   │
+            // │  Q/Esc   │  W / !   │  E / @   │  R / #   │  T / :   │   │  Y / -   │  U / _   │  I / =   │  O / +   │  P / *   │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │ A / ⌘   │ S / ⌥   │ D / ⌃   │ F / ⇧   │    G     │   │ H / ⇧   │ J / ⌃   │ K / ⌥   │ L / ⌘   │    '     │
+            // │    A     │    S     │    D     │    F     │    G     │   │  H / ;   │    J     │    K     │    L     │    '     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │  Z/Shft  │ X / ⌃   │ C / ⌥   │ V / ⌘   │    B     │   │    N     │ M / ⌃   │  , / ⌥  │  . / ⌘  │  //Shft  │
+            // │  Z/Shft  │ X / ⌃   │ C / ⌥   │ V / ⌘   │    B     │   │    N     │ M / ⌘   │  , / ⌥  │  . / ⌃  │  //Shft  │
             // └──────────┴──────────┴──────────┼──────────┼──────────┼───┤   ├──────────┼──────────┼──────────┴──────────┴──────────┘
-            //                                  │  Hyper   │   NAV    │Esc│   │  Return  │  Space   │   Bspc   │
+            //                                  │  Hyper   │   NAV    │Tab│   │  Return  │  Space   │   Bspc   │
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
             bindings = <
-&mt ESC Q        &hm EXCL W    &hm AT E      &hm HASH R    &kp T            &hm MINUS Y   &hm UNDER U   &hm EQUAL I   &hm PLUS O    &hm ASTRK P
-&hm LGUI A       &hm LALT S    &hm LCTRL D   &hm LSHFT F   &kp G            &hm RSHFT H   &hm RCTRL J   &hm RALT K    &hm RGUI L    &lt NUM SQT
-&mt LSHFT Z      &hm LCTRL X   &hm LALT C    &hm LGUI V    &kp B            &kp N         &hm RCTRL M   &hm RALT COMMA &hm RGUI DOT &mt RSHFT FSLH
-             &kp LS(LC(LA(LGUI))) &mo NAV   &kp ESC                         &kp RET       &kp SPACE     &kp BSPC
+&mt ESC Q        &hm EXCL W    &hm AT E      &hm HASH R    &hm COLON T      &hm MINUS Y   &hm UNDER U   &hm EQUAL I   &hm PLUS O    &hm ASTRK P
+&kp A            &kp S         &kp D         &kp F         &kp G            &hm SEMI H    &kp J         &kp K         &kp L         &lt NUM SQT
+&mt LSHFT Z      &hm LCTRL X   &hm LALT C    &hm LGUI V    &kp B            &kp N         &hm RGUI M    &hm RALT COMMA &hm RCTRL DOT &mt RSHFT FSLH
+             &kp LS(LC(LA(LGUI))) &mo NAV   &kp TAB                         &kp RET       &kp SPACE     &kp BSPC
             >;
         };
 
