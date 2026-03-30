@@ -419,6 +419,8 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <a href="#Navigation">
 <text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
+</a><a href="#Navigation">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
 </a></g>
 <g transform="translate(476, 196)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>

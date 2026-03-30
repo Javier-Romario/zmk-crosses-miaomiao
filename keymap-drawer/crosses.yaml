@@ -35,7 +35,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: LGUI}
   - $$mdi:keyboard-return$$
-  - Navigation
+  - {t: Navigation, h: Navigation}
   - $$mdi:backspace$$
   Navigation:
   - {t: '$$mdi:transfer$$', type: trans}
