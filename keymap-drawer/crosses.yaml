@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: crosses}
 layers:
   Base:
-  - {t: Q, h: '$$mdi:keyboard-esc$$'}
+  - {t: Q, h: '$$mdi:keyboard-tab$$'}
   - {t: W, h: '!'}
   - {t: E, h: '@'}
   - {t: R, h: '#'}
