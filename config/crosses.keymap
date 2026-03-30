@@ -182,7 +182,7 @@
 &mt ESC Q        &hm EXCL W    &hm AT E      &hm HASH R    &hm COLON T      &hm MINUS Y   &hm UNDER U   &hm EQUAL I   &hm PLUS O    &hm COLON P
 &kp A            &kp S         &kp D         &kp F         &kp G            &kp H    &kp J         &kp K         &kp L         &lt NUM SQT
 &mt LSHFT Z      &hm LCTRL X   &kp C         &kp V         &kp B            &kp N         &hm RGUI M    &hm RALT COMMA &hm RCTRL DOT &mt RSHFT FSLH
-             &mt LS(LC(LA(LGUI))) ESC &kp LALT &mt LGUI SPACE               &kp RET       &mo NAV       &kp BSPC
+             &mt LS(LC(LA(LGUI))) ESC &kp LALT &mt LGUI SPACE               &kp RET       &sl_tog NAV NAV &kp BSPC
             >;
         };
 
