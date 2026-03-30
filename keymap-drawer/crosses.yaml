@@ -38,7 +38,7 @@ layers:
   - {t: Navigation, h: Navigation}
   - $$mdi:backspace$$
   Navigation:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -72,8 +72,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-return$$
-  - {t: '$$mdi:backspace$$', type: held}
-  - DEL
+  - {t: Base, h: toggle, type: held}
+  - $$mdi:backspace$$
   Numbers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
