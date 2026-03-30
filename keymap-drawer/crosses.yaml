@@ -5,21 +5,21 @@ layers:
   - {t: W, h: '!'}
   - {t: E, h: '@'}
   - {t: R, h: '#'}
-  - T
+  - {t: T, h: ':'}
   - {t: Y, h: '-'}
   - {t: U, h: _}
   - {t: I, h: '='}
   - {t: O, h: +}
   - {t: P, h: '*'}
-  - {t: A, h: LGUI}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - A
+  - S
+  - D
+  - F
   - G
-  - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: L, h: RGUI}
+  - {t: H, h: ;}
+  - J
+  - K
+  - L
   - {t: '''', h: Numbers}
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '$$mdi:apple-keyboard-control$$'}
@@ -27,13 +27,13 @@ layers:
   - {t: V, h: LGUI}
   - B
   - N
-  - {t: M, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: M, h: RGUI}
   - {t: ',', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ., h: RGUI}
+  - {t: ., h: '$$mdi:apple-keyboard-control$$'}
   - {t: /, h: '$$mdi:apple-keyboard-shift$$'}
   - Sft+Ctl+Alt+LGUI
   - Navigation
-  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab$$
   - $$mdi:keyboard-return$$
   - $$mdi:keyboard-space$$
   - $$mdi:backspace$$
@@ -223,8 +223,6 @@ layers:
   - {type: held}
   - {type: held}
 combos:
-- p: [0, 1]
-  k: $$mdi:keyboard-tab$$
 - p: [31, 34]
   k: {t: Symbols, h: toggle}
 - p: [33, 35]
