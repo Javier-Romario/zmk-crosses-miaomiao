@@ -50,6 +50,15 @@
             bindings = <&tog>, <&sl>;
         };
 
+        // Tap = one-shot layer, Hold = momentary layer
+        mo_sl: mo_sl {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&sl>;
+        };
+
         // Opening delimiter: tap={, shift=(
         brace_paren_open: brace_paren_open {
             compatible = "zmk,behavior-mod-morph";
@@ -170,19 +179,19 @@
         base_layer {
             display-name = "Base";
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-            // │  Q/Esc   │  W / !   │  E / @   │  R / #   │  T / :   │   │  Y / -   │  U / _   │  I / =   │  O / +   │  P / *   │
+            // │  Q/Esc   │  W / !   │  E / @   │  R / #   │  T / :   │   │  Y / -   │  U / _   │  I / =   │  O / +   │  P / ;   │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │    A     │    S     │    D     │    F     │    G     │   │  H / ;   │    J     │    K     │    L     │    '     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │  Z/Shft  │ X / ⌃   │    C     │    V     │    B     │   │    N     │ M / ⌘   │  , / ⌥  │  . / ⌃  │  //Shft  │
             // └──────────┴──────────┴──────────┼──────────┼──────────┼───┤   ├──────────┼──────────┼──────────┴──────────┴──────────┘
-            //                                  │ Esc/Hyp  │   Alt    │Spc/⌘│  │  Return  │   NAV    │   Bspc   │
-            //                                  └──────────┴──────────┴─────┘  └──────────┴──────────┴──────────┘
+            //                                  │ Esc/Hyp  │   Alt    │  NAV  │  │  Return  │  Spc/⌘   │   Bspc   │
+            //                                  └──────────┴──────────┴───────┘  └──────────┴──────────┴──────────┘
             bindings = <
-&mt TAB Q        &hm EXCL W    &hm AT E      &hm HASH R    &hm COLON T      &hm MINUS Y   &hm UNDER U   &hm EQUAL I   &hm PLUS O    &hm COLON P
+&mt TAB Q        &hm EXCL W    &hm AT E      &hm HASH R    &hm COLON T      &hm MINUS Y   &hm UNDER U   &hm EQUAL I   &hm PLUS O    &hm SEMI P
 &kp A            &kp S         &kp D         &kp F         &kp G            &kp H    &kp J         &kp K         &kp L         &lt NUM SQT
 &mt LSHFT Z      &hm LCTRL X   &kp C         &kp V         &kp B            &kp N         &hm RGUI M    &hm RALT COMMA &hm RCTRL DOT &mt RSHFT FSLH
-             &mt LS(LC(LA(LGUI))) ESC &kp LALT &mt LGUI SPACE               &kp RET       &sl_tog NAV NAV &kp BSPC
+             &mt LS(LC(LA(LGUI))) ESC &kp LALT &mo_sl NAV NAV               &kp RET       &mt LGUI SPACE &kp BSPC
             >;
         };
 
