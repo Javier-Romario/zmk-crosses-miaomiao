@@ -10,7 +10,7 @@ layers:
   - {t: U, h: _}
   - {t: I, h: '='}
   - {t: O, h: +}
-  - {t: P, h: ':'}
+  - {t: P, h: ;}
   - A
   - S
   - D
@@ -33,9 +33,9 @@ layers:
   - {t: /, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-esc$$', h: Sft+Ctl+Alt+LGUI}
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: LGUI}
-  - $$mdi:keyboard-return$$
   - {t: Navigation, h: Navigation}
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:keyboard-space$$', h: LGUI}
   - $$mdi:backspace$$
   Navigation:
   - {t: Base, h: toggle}
@@ -70,9 +70,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:keyboard-return$$
-  - {t: Base, h: toggle, type: held}
+  - {t: Base, h: toggle}
   - $$mdi:backspace$$
   Numbers:
   - {t: '$$mdi:transfer$$', type: trans}

@@ -285,7 +285,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">P</text>
-<text x="0" y="24" class="key hold">:</text>
+<text x="0" y="24" class="key hold">;</text>
 </g>
 <g transform="translate(28, 84)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -409,9 +409,11 @@ rect.held, rect.combo.held {
 <g transform="translate(252, 196)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-11" y="-15" height="22" width="22.0" class="key tap glyph mdi:keyboard-space"/>
-<text x="0" y="24" class="key hold">LGUI</text>
-</g>
+<a href="#Navigation">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
+</a><a href="#Navigation">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
+</a></g>
 <g transform="translate(364, 196)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -420,11 +422,9 @@ rect.held, rect.combo.held {
 <g transform="translate(420, 196)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#Navigation">
-<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
-</a><a href="#Navigation">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 70%">Navigation</tspan></text>
-</a></g>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-11" y="-15" height="22" width="22.0" class="key tap glyph mdi:keyboard-space"/>
+<text x="0" y="24" class="key hold">LGUI</text>
+</g>
 <g transform="translate(476, 196)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -625,22 +625,21 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-11" y="-15" height="22" width="22.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(252, 196)" class="key trans keypos-32">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-11" y="-15" height="22" width="22.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(252, 196)" class="key held keypos-32">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
 <g transform="translate(364, 196)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-11" y="-15" height="22" width="22.0" class="key tap glyph mdi:keyboard-return"/>
 </g>
-<g transform="translate(420, 196)" class="key held keypos-34">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<g transform="translate(420, 196)" class="key keypos-34">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <a href="#Base">
-<text x="0" y="-4" class="key held tap layer-activator">Base</text>
-</a><text x="0" y="24" class="key held hold">toggle</text>
+<text x="0" y="-4" class="key tap layer-activator">Base</text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(476, 196)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
