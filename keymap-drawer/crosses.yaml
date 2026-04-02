@@ -8,8 +8,8 @@ layers:
   - {t: T, h: '&'}
   - {t: Y, h: '-'}
   - {t: U, h: '='}
-  - '&hm_open I'
-  - '&hm_close O'
+  - {t: I, h: (}
+  - {t: O, h: )}
   - {t: P, h: ;}
   - A
   - S
