@@ -126,8 +126,8 @@ layers:
   - '&'
   - '*'
   - '@'
-  - {t: '#', type: held}
-  - {t: ;, s: ':', type: held}
+  - '#'
+  - {t: ;, s: ':'}
   - {t: '{', s: (}
   - {t: '}', s: )}
   - {t: '[', s: ']'}
@@ -143,8 +143,8 @@ layers:
   - '&m_opt_chain'
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -223,8 +223,8 @@ layers:
   - {type: held}
   - {type: held}
 combos:
-- p: [14, 15]
-  k: {t: Symbols, h: Symbols}
+- p: [31, 32]
+  k: {t: Symbols, h: '$$mdi:gesture-tap-hold$$'}
 - p: [33, 35]
   k: Function
 - p: [34, 35]
