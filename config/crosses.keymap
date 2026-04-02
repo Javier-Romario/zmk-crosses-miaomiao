@@ -123,43 +123,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        // Open paren primary, open brace on shift (top row I hold)
-        open_delim: open_delim {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp LBRC>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        // Close paren primary, close brace on shift (top row O hold)
-        close_delim: close_delim {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp RBRC>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        // Hold-tap: hold = open_delim (( / {), tap = kp
-        hm_open: hm_open {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            bindings = <&open_delim>, <&kp>;
-        };
-
-        // Hold-tap: hold = close_delim () / }), tap = kp
-        hm_close: hm_close {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            bindings = <&close_delim>, <&kp>;
-        };
     };
 
     macros {
@@ -233,7 +196,7 @@
             //                                  │ Esc/Hyp  │   Alt    │  NAV  │  │  Return  │  Spc/⌘   │   Bspc   │
             //                                  └──────────┴──────────┴───────┘  └──────────┴──────────┴──────────┘
             bindings = <
-&mt TAB Q        &hm EXCL W    &hm AT E      &hm HASH R    &hm AMPS T       &hm MINUS Y   &hm EQUAL U   &hm_open I    &hm_close O   &hm SEMI P
+&mt TAB Q        &hm EXCL W    &hm AT E      &hm HASH R    &hm AMPS T       &hm MINUS Y   &hm EQUAL U   &hm LPAR I    &hm RPAR O    &hm SEMI P
 &kp A            &kp S         &kp D         &kp F         &kp G            &kp H    &kp J         &kp K         &kp L         &lt NUM SQT
 &mt LSHFT Z      &hm LCTRL X   &kp C         &hm LGUI V    &kp B            &kp N         &hm RGUI M    &hm RALT COMMA &hm RCTRL DOT &mt RSHFT FSLH
              &mt LS(LC(LA(LGUI))) ESC &kp LALT &mo_sl NAV NAV               &kp RET       &mt LGUI SPACE &kp BSPC
