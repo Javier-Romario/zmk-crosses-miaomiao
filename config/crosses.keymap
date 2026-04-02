@@ -154,11 +154,11 @@
     combos {
         compatible = "zmk,combos";
 
-        // Thumb pairs
+        // Left thumb pair — one-shot SYM
         combo_sym {
             timeout-ms = <50>;
-            key-positions = <14 15>;
-            bindings = <&sl_tog SYM SYM>;
+            key-positions = <31 32>;
+            bindings = <&sl SYM>;
         };
         combo_fun {
             timeout-ms = <50>;
