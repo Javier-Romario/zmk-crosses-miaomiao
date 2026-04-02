@@ -5,11 +5,11 @@ layers:
   - {t: W, h: '!'}
   - {t: E, h: '@'}
   - {t: R, h: '#'}
-  - {t: T, h: ':'}
+  - {t: T, h: '&'}
   - {t: Y, h: '-'}
-  - {t: U, h: _}
-  - {t: I, h: '='}
-  - {t: O, h: +}
+  - {t: U, h: '='}
+  - '&hm_open I'
+  - '&hm_close O'
   - {t: P, h: ;}
   - A
   - S
@@ -24,7 +24,7 @@ layers:
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: '$$mdi:apple-keyboard-control$$'}
   - C
-  - V
+  - {t: V, h: LGUI}
   - B
   - N
   - {t: M, h: RGUI}
@@ -71,8 +71,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - $$mdi:keyboard-return$$
-  - {t: Base, h: toggle}
+  - {t: '$$mdi:keyboard-return$$', type: held alternate}
+  - {t: Base, h: toggle, type: held alternate}
   - $$mdi:backspace$$
   Numbers:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -229,3 +229,5 @@ combos:
   k: Function
 - p: [34, 35]
   k: {t: Media, h: Media}
+- p: [33, 34]
+  k: Navigation
