@@ -24,6 +24,14 @@
         map = <INPUT_REL_Y INPUT_REL_WHEEL>;
     };
 
+    // Scale down wheel events after the Y→WHEEL remap.
+    left_tb_wheel_scaler: left_tb_wheel_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <2>;
+        type = <INPUT_EV_REL>;
+        codes = <INPUT_REL_WHEEL>;
+    };
+
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
@@ -32,6 +40,6 @@
     left_trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
-        input-processors = <&left_tb_x_suppressor 0 1>, <&left_tb_y_to_scroll>;
+        input-processors = <&left_tb_x_suppressor 0 1>, <&left_tb_y_to_scroll>, <&left_tb_wheel_scaler 1 3>;
     };
 };
