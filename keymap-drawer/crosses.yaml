@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: crosses}
 layers:
   Base:
-  - {t: Q, h: '$$mdi:keyboard-tab$$'}
+  - Q
   - {t: W, h: '!'}
   - {t: E, h: '@'}
   - {t: R, h: '#'}
@@ -223,6 +223,8 @@ layers:
   - {type: held}
   - {type: held}
 combos:
+- p: [12, 13]
+  k: $$mdi:keyboard-tab$$
 - p: [31, 32]
   k: {t: Symbols, h: '$$mdi:gesture-tap-hold$$'}
 - p: [33, 35]
