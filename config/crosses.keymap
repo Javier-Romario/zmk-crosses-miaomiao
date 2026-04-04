@@ -154,6 +154,13 @@
     combos {
         compatible = "zmk,combos";
 
+        // D+F chord — Tab
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp TAB>;
+        };
+
         // Left thumb pair — one-shot SYM
         combo_sym {
             timeout-ms = <50>;
@@ -187,7 +194,7 @@
         base_layer {
             display-name = "Base";
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-            // │  Q/Esc   │  W / !   │  E / @   │  R / #   │  T / &   │   │  Y / -   │  U / =   │  I / (   │  O / )   │  P / ;   │
+            // │    Q     │  W / !   │  E / @   │  R / #   │  T / &   │   │  Y / -   │  U / =   │  I / (   │  O / )   │  P / ;   │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │    A     │    S     │    D     │    F     │    G     │   │  H / ;   │    J     │    K     │    L     │    '     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
@@ -196,7 +203,7 @@
             //                                  │ Esc/Hyp  │   Alt    │  NAV  │  │  Return  │  Spc/⌘   │   Bspc   │
             //                                  └──────────┴──────────┴───────┘  └──────────┴──────────┴──────────┘
             bindings = <
-&mt TAB Q        &hm EXCL W    &hm AT E      &hm HASH R    &hm AMPS T       &hm MINUS Y   &hm EQUAL U   &hm LPAR I    &hm RPAR O    &hm SEMI P
+&kp Q            &hm EXCL W    &hm AT E      &hm HASH R    &hm AMPS T       &hm MINUS Y   &hm EQUAL U   &hm LPAR I    &hm RPAR O    &hm SEMI P
 &kp A            &kp S         &kp D         &kp F         &kp G            &kp H    &kp J         &kp K         &kp L         &lt NUM SQT
 &mt LSHFT Z      &hm LCTRL X   &kp C         &hm LGUI V    &kp B            &kp N         &hm RGUI M    &hm RALT COMMA &hm RCTRL DOT &mt RSHFT FSLH
              &mt LS(LC(LA(LGUI))) ESC &kp LALT &mo_sl NAV NAV               &kp RET       &mt LGUI SPACE &kp BSPC
