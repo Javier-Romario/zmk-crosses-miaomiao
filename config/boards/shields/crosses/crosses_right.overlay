@@ -25,11 +25,14 @@
     };
 
     // Scale down wheel events after the Y→WHEEL remap.
+    // track-remainders accumulates sub-threshold counts across polls
+    // rather than dropping them, preventing choppy/jumpy scroll.
     left_tb_wheel_scaler: left_tb_wheel_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
         type = <INPUT_EV_REL>;
         codes = <INPUT_REL_WHEEL>;
+        track-remainders;
     };
 
     trackball_listener {
