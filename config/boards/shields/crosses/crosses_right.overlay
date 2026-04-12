@@ -6,32 +6,21 @@
 };
 
 / {
-    // Suppress horizontal (X) movement to prevent cursor drift.
-    left_tb_x_suppressor: left_tb_x_suppressor {
-        compatible = "zmk,input-processor-scaler";
-        #input-processor-cells = <2>;
-        type = <INPUT_EV_REL>;
-        codes = <INPUT_REL_X>;
-    };
-
-    // Map only REL_Y → WHEEL (vertical scroll).
-    // Unlike zip_xy_to_scroll_mapper, this does NOT map REL_X → HWHEEL,
-    // so no horizontal scroll events are ever sent to the host.
-    left_tb_y_to_scroll: left_tb_y_to_scroll {
+    // Map REL_X → HWHEEL and REL_Y → WHEEL (full scroll in both axes).
+    left_tb_to_scroll: left_tb_to_scroll {
         compatible = "zmk,input-processor-code-mapper";
         #input-processor-cells = <0>;
         type = <INPUT_EV_REL>;
-        map = <INPUT_REL_Y INPUT_REL_WHEEL>;
+        map = <INPUT_REL_X INPUT_REL_HWHEEL INPUT_REL_Y INPUT_REL_WHEEL>;
     };
 
-    // Scale down wheel events after the Y→WHEEL remap.
-    // track-remainders accumulates sub-threshold counts across polls
-    // rather than dropping them, preventing choppy/jumpy scroll.
+    // Scale down wheel events. track-remainders accumulates sub-threshold
+    // counts across polls rather than dropping them, preventing choppy scroll.
     left_tb_wheel_scaler: left_tb_wheel_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
         type = <INPUT_EV_REL>;
-        codes = <INPUT_REL_WHEEL>;
+        codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
         track-remainders;
     };
 
@@ -43,6 +32,6 @@
     left_trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
-        input-processors = <&left_tb_x_suppressor 0 1>, <&left_tb_y_to_scroll>, <&left_tb_wheel_scaler 1 8>;
+        input-processors = <&left_tb_to_scroll>, <&left_tb_wheel_scaler 1 8>;
     };
 };

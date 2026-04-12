@@ -60,7 +60,6 @@
       spi-max-frequency = <2000000>;
       irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 #ifdef CONFIG_SHIELD_CROSSES_RIGHT
-      scroll-layers = <1>;
       automouse-layer = <1>;
 #endif
       //snipe-layers = <4>;
