@@ -27,6 +27,8 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        automouse-layer = <1>;
+        automouse-layer-timeout-ms = <500>;
     };
 
     left_trackball_listener {
