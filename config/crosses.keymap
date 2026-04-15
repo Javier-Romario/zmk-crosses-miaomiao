@@ -298,14 +298,14 @@
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             // │   Prev   │  Vol Dn  │  Vol Up  │   Next   │         │   │          │          │          │          │          │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │  RGB Eff │  Hue +   │  Sat +   │  Sat -   │  RGB Tog │   │          │          │          │          │ Boot     │
+            // │  RGB Eff │  Hue +   │  Sat +   │  Sat -   │  RGB Tog │   │          │          │          │          │          │
             // └──────────┴──────────┴──────────┼──────────┼──────────┼───┤   ├──────────┼──────────┼──────────┴──────────┴──────────┘
             //                                  │   Mute   │   Play   │ ⏹ │   │          │          │          │
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
             bindings = <
 &to BASE         &trans           &kp C_BRI_DN     &kp C_BRI_UP     &trans           &trans        &trans        &trans        &trans        &trans
 &kp C_PREV       &kp C_VOL_DN     &kp C_VOL_UP     &kp C_NEXT       &trans           &trans        &trans        &trans        &trans        &trans
-&rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_TOG  &trans        &trans        &trans        &trans        &bootloader
+&rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_TOG  &trans        &trans        &trans        &trans        &trans
                  &kp C_MUTE       &kp C_PP         &kp C_STOP                        &trans        &trans        &trans
             >;
         };
