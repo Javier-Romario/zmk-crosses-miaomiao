@@ -232,19 +232,19 @@
         num_layer {
             display-name = "Numbers";
             // ┌──────────┬──────────┬──────────┬──────────┬──────────┐   ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-            // │          │          │          │          │          │   │    [     │    7     │    8     │    9     │    ]     │
+            // │    1     │    2     │    3     │    4     │    5     │   │    6     │    7     │    8     │    9     │    0     │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │          │          │          │          │          │   │    ;     │    4     │    5     │    6     │    =     │
+            // │          │          │          │          │          │   │          │    (     │    )     │          │          │
             // ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            // │          │          │          │          │          │   │    `     │    1     │    2     │    3     │    \     │
+            // │          │          │          │          │          │   │          │    [     │    ]     │          │          │
             // └──────────┴──────────┴──────────┼──────────┼──────────┼───┤   ├──────────┼──────────┼──────────┴──────────┴──────────┘
-            //                                  │  (held)  │          │(h)│   │    -     │    0     │    .     │
+            //                                  │  (held)  │          │(h)│   │    -     │          │    .     │
             //                                  └──────────┴──────────┴───┘   └──────────┴──────────┴──────────┘
             bindings = <
-&trans      &trans      &trans      &trans      &trans            &kp LBKT     &kp N7       &kp N8       &kp N9       &kp RBKT
-&trans      &trans      &trans      &trans      &trans            &kp SEMI     &kp N4       &kp N5       &kp N6       &kp EQUAL
-&trans      &trans      &trans      &trans      &trans            &kp GRAVE    &kp N1       &kp N2       &kp N3       &kp BSLH
-            &trans      &trans      &trans                        &kp MINUS    &kp N0       &kp DOT
+&kp N1      &kp N2      &kp N3      &kp N4      &kp N5            &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
+&trans      &trans      &trans      &trans      &trans            &trans       &kp LPAR     &kp RPAR     &trans       &trans
+&trans      &trans      &trans      &trans      &trans            &trans       &kp LBKT     &kp RBKT     &trans       &trans
+            &trans      &trans      &trans                        &kp MINUS    &trans       &kp DOT
             >;
         };
 
