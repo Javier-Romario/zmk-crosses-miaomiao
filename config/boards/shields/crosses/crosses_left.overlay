@@ -4,3 +4,10 @@
     device = <&trackball>;
 };
 
+/ {
+    isa: behavior_insomnia {
+        compatible = "zmk,behavior-insomnia";
+        #binding-cells = <1>;
+    };
+};
+
