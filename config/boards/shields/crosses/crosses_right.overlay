@@ -32,6 +32,6 @@
     left_trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
-        input-processors = <&left_tb_to_scroll>, <&left_tb_wheel_scaler 1 8>;
+        input-processors = <&left_tb_to_scroll>, <&left_tb_wheel_scaler 1 16>;
     };
 };
