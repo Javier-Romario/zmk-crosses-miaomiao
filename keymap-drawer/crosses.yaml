@@ -33,9 +33,9 @@ layers:
   - {t: /, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-esc$$', h: Sft+Ctl+Alt+LGUI}
   - $$mdi:apple-keyboard-option$$
-  - {t: Navigation, h: Navigation}
+  - LGUI
   - $$mdi:keyboard-return$$
-  - {t: '$$mdi:keyboard-space$$', h: LGUI}
+  - {t: '$$mdi:keyboard-space$$', h: Navigation}
   - $$mdi:backspace$$
   Navigation:
   - {t: Base, h: toggle}
@@ -70,9 +70,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-return$$
   - {type: held}
-  - {t: '$$mdi:keyboard-return$$', type: held alternate}
-  - {t: Base, h: toggle, type: held alternate}
   - $$mdi:backspace$$
   Numbers:
   - '1'
@@ -231,5 +231,3 @@ combos:
   k: Function
 - p: [34, 35]
   k: {t: Media, h: Media}
-- p: [33, 34]
-  k: Navigation
