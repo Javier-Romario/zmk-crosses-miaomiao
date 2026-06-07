@@ -190,7 +190,7 @@
             bindings = <
 &kp Q            &hm EXCL W    &hm AT E      &hm HASH R    &hm AMPS T       &hm MINUS Y   &hm EQUAL U   &hm LPAR I    &hm RPAR O    &hm SEMI P
 &kp A            &kp S         &kp D         &kp F         &kp G            &kp H    &kp J         &kp K         &kp L         &lt NUM SQT
-&mt LSHFT Z      &hm LCTRL X   &kp C         &hm LGUI V    &kp B            &kp N         &hm RGUI M    &hm RALT COMMA &hm RCTRL DOT &mt RSHFT FSLH
+&hm LSHFT Z      &hm LCTRL X   &kp C         &hm LGUI V    &kp B            &kp N         &hm RGUI M    &hm RALT COMMA &hm RCTRL DOT &hm RSHFT FSLH
              &mt LS(LC(LA(LGUI))) ESC &kp LALT &kp LGUI                     &kp RET       &lt NAV SPACE &kp BSPC
             >;
         };
