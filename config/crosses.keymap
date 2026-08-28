@@ -41,13 +41,20 @@
             continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
         };
 
-        // Tap = one-shot layer, Hold = toggle layer
+        // Tap = one-shot layer, Hold = sticky layer w/ idle timeout (auto-revert)
         sl_tog: sl_tog {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&tog>, <&sl>;
+            bindings = <&media_sticky>, <&sl>;
+        };
+
+        // Sticky MEDIA layer: reverts on next keypress, or after release-after-ms idle
+        media_sticky: media_sticky {
+            compatible = "zmk,behavior-sticky-layer";
+            #binding-cells = <1>;
+            release-after-ms = <5000>;
         };
 
         // Opening delimiter: tap={, shift=(
@@ -164,7 +171,7 @@
             bindings = <&mo FUN>;
         };
 
-        // Right thumb adjacent — MEDIA/Media (tap = one-shot, hold = toggle)
+        // Right thumb adjacent — MEDIA/Media (tap = one-shot, hold = sticky w/ timeout)
         combo_mouse {
             timeout-ms = <50>;
             key-positions = <34 35>;
