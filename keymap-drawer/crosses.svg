@@ -452,9 +452,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <a href="#Media">
 <text x="448" y="196" class="combo tap layer-activator">Media</text>
-</a><a href="#Media">
-<text x="448" y="207" class="combo hold layer-activator">Media</text>
-</a></g>
+</a><text x="448" y="207" class="combo hold"><tspan style="font-size: 64%">&amp;media_sti…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 280)" class="layer-Navigation">
@@ -667,9 +666,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <a href="#Media">
 <text x="448" y="196" class="combo tap layer-activator">Media</text>
-</a><a href="#Media">
-<text x="448" y="207" class="combo hold layer-activator">Media</text>
-</a></g>
+</a><text x="448" y="207" class="combo hold"><tspan style="font-size: 64%">&amp;media_sti…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 560)" class="layer-Numbers">
@@ -875,9 +873,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <a href="#Media">
 <text x="448" y="196" class="combo tap layer-activator">Media</text>
-</a><a href="#Media">
-<text x="448" y="207" class="combo hold layer-activator">Media</text>
-</a></g>
+</a><text x="448" y="207" class="combo hold"><tspan style="font-size: 64%">&amp;media_sti…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 840)" class="layer-Symbols">
@@ -1092,9 +1089,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <a href="#Media">
 <text x="448" y="196" class="combo tap layer-activator">Media</text>
-</a><a href="#Media">
-<text x="448" y="207" class="combo hold layer-activator">Media</text>
-</a></g>
+</a><text x="448" y="207" class="combo hold"><tspan style="font-size: 64%">&amp;media_sti…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1120)" class="layer-Function">
@@ -1301,9 +1297,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <a href="#Media">
 <text x="448" y="196" class="combo tap layer-activator">Media</text>
-</a><a href="#Media">
-<text x="448" y="207" class="combo hold layer-activator">Media</text>
-</a></g>
+</a><text x="448" y="207" class="combo hold"><tspan style="font-size: 64%">&amp;media_sti…</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1400)" class="layer-Media">
@@ -1528,9 +1523,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="434" y="183" width="28" height="26" class="combo"/>
 <a href="#Media">
 <text x="448" y="196" class="combo tap layer-activator">Media</text>
-</a><a href="#Media">
-<text x="448" y="207" class="combo hold layer-activator">Media</text>
-</a></g>
+</a><text x="448" y="207" class="combo hold"><tspan style="font-size: 64%">&amp;media_sti…</tspan></text>
+</g>
 </g>
 </g>
 </svg>

@@ -230,4 +230,4 @@ combos:
 - p: [33, 35]
   k: Function
 - p: [34, 35]
-  k: {t: Media, h: Media}
+  k: {t: Media, h: '&media_sticky 5'}
